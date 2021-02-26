@@ -1,0 +1,10 @@
+//https://www.codewars.com/kata/564ab935de55a747d7000040
+
+function remove(str, what) {
+  for(let key in what) {
+    for(let i = 0; i < what[key]; i++) {
+      str = str.replace(key,'');
+    }
+  }
+  return str;
+}
