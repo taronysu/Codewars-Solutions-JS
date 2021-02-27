@@ -1,0 +1,9 @@
+//https://www.codewars.com/kata/559cc2d2b802a5c94700000c/train/javascript
+
+function consecutive(arr) {
+let first = Math.min(...arr);
+let  last = Math.max(...arr);
+  if(first===last||arr.length===0) return 0;
+  else 
+    return last-arr.length-first + 1;
+  }
