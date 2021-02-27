@@ -1,0 +1,6 @@
+//https://www.codewars.com/kata/5bf774a81505a7413400006a/train/javascript
+
+function fix(p){
+ return p.length ? 
+   p.split('. ').map(el=> el[0].toUpperCase() + el.slice(1)).join('. '): p;  
+}
