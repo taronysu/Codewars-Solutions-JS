@@ -1,4 +1,4 @@
-//https://www.codewars.com/kata/5b39e91ee7a2c103300018b3/train/javascript
+https://www.codewars.com/kata/5b39e91ee7a2c103300018b3/train/javascript
 
 const removeConsecutiveDuplicates = s => s.split(" ")
 .filter((el,i,arr) => el!=arr[i-1]).join(" ");
