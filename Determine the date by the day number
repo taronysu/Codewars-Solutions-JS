@@ -1,4 +1,4 @@
-//https://www.codewars.com/kata/602afedfd4a64d0008eb4e6e/train/javascript
+https://www.codewars.com/kata/602afedfd4a64d0008eb4e6e/train/javascript
 
 function getDay(day, isLeap){
   let m = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October','November', 'December'];
