@@ -1,4 +1,4 @@
-//https://www.codewars.com/kata/5f8a15c06dbd530016be0c19/train/javascript
+https://www.codewars.com/kata/5f8a15c06dbd530016be0c19/train/javascript
 
 function duplicateSandwich(a) {
   for(let i = 0; i < a.length; i++)
