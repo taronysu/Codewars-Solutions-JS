@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/60113ded99cef9000e309be3/train/javascript
+
+function separateTypes(input) {
+  let obj = {};
+  for(let el of input) {
+    let type = typeof el;
+    if((type in obj)===false) {
+     obj[type]=[el];
+      } else  { 
+        obj[type].push(el);
+        }
+  }
+return obj;
+}
