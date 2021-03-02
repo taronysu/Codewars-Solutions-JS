@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/56d0a591c6c8b466ca00118b/train/javascript
+
+function isTriangular(t) {
+  for (let i = 0; i <= t; i++) {
+    if (t === i * (i + 1 ) / 2) { return true; }
+  }  return false;  
+}
