@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5a02e9c19f8e2dbd50000167/train/javascript
+
+function vowelStart(str){
+  str = str.toLowerCase();
+return str.replace(/[^a-z0-9]/gi,'')
+  .replace(/([aeiou])/gi,' $1').trim();
+}
