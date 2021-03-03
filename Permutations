@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/5254ca2719453dcc0b00027d/train/javascript
+
+function permutations(string) {
+  if (string.length < 2) return [string];
+  let permut = [];
+  for (let i = 0; i < string.length; i++) {
+    let char = string[i];
+    if (string.indexOf(char) != i) 
+      continue;
+    let remainingString = string.slice(0, i) + string.slice(i + 1, string.length);
+    for (let subPermutation of permutations(remainingString))
+      permut.push(char + subPermutation);
+  }
+  return permut;
+  }
