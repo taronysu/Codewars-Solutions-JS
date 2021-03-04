@@ -7,3 +7,8 @@ function rotate(str){
 }
   return arr;
 }
+
+//Another Solution
+function rotate(str){
+return str.split('').map((el,i)=>str.slice(i+1) + str.slice(0,i+1));
+}
