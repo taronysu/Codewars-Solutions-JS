@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5a995c2aba1bb57f660001fd/train/javascript
+
+function scrollingText(text){
+  let txt = text.toUpperCase()
+  return txt.split('').map((el,i)=>txt.slice(i) + txt.slice(0,i));
+}
