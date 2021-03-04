@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5e4217e476126b000170489b/train/javascript
+
+function polydivisible(x) {
+  x = x.toString()
+  for (let i = 0; i <= x.length; i++)
+    if (x.slice(0, i) % i)
+      return false;
+  return true;
+}
