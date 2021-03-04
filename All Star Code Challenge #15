@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/586560a639c5ab3a260000f3/train/javascript
+
+function rotate(str){
+  let arr = [];
+   for(let i = 0; i< str.length;i++) {
+   arr.push(str.slice(i+1) + str.slice(0,i+1));
+}
+  return arr;
+}
