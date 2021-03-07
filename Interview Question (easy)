@@ -1,0 +1,31 @@
+https://www.codewars.com/kata/5b358a1e228d316283001892/train/javascript
+
+function getStrings(city){
+  city = city.toLowerCase().replace(/\s/g,'');
+  let obj = {};
+  for (let el of city){
+    if (obj[el]) obj[el]+='*';
+    else obj[el] = '*';
+}
+  let arr = Object.entries(obj);
+  let s = '';
+  for(let i=0;i < arr.length; i++) {
+    s+=arr[i][0]+':'+arr[i][1]+',';
+  }
+  return s.slice(0,-1);
+}
+
+//Another solution
+
+function getStrings(city){
+  let obj = {};
+  city = city.toLowerCase().replace(/\s/g,"");
+  for (let i of city) {
+    if (i in obj) {
+      obj[i]+= '*';
+    } else{
+       obj[i] = '*';
+    }
+  }
+  return Object.entries(obj).map(l => l[0]+":"+l[1]).join(',');
+}
