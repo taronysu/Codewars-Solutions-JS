@@ -1,0 +1,28 @@
+https://www.codewars.com/kata/5aa1931311dbd9358b000823/train/javascript
+
+function averageFemale(list){
+  const females = list.filter(person => person.gender === 'female');
+    if (females.length == 0) {
+    return 0; // prevent division by 0
+    }
+    
+  return list.filter(el=>el.gender === 'female').reduce((a,b)=>a+b.age,0)/females.length;
+}
+
+//Another Solution
+
+function averageFemale(list){
+  let sum = 0;
+  let femaleCount = 0;
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].gender == 'female') {
+      sum += list[i].age;
+      femaleCount++;
+    }
+  }
+  if (femaleCount == 0) {
+    return 0;
+  }
+  let avg = sum / femaleCount;
+  return avg;
+}
