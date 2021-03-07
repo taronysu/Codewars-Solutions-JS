@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/56582133c932d8239900002e/train/javascript
+
+function mostFrequentItemCount(collection) {
+  if(collection.length===0) return 0;
+  let obj = {};
+  for(let num of collection){
+        if(obj[num]) obj[num]++;
+        else obj[num] = 1;
+    }
+    let max = Math.max(...Object.values(obj));
+return max;
+  }
