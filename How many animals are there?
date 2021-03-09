@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/593406b8f3d071d83c00005d/train/javascript
+
+function countAnimals(sentence) {
+  let nums = sentence.split(' ').filter(el=> parseInt(el)).map(el=> parseInt(el));
+  console.log(nums)
+    if(nums.length !== 0) {
+        return nums.reduce((a,b) => a + b);
+    } else
+        return 0;
+}
+
+// Another Solution
+
+function countAnimals(sentence) {
+   return (sentence.match(/\d+/g) || []).reduce((sum, el) => sum + +el, 0);
+}
