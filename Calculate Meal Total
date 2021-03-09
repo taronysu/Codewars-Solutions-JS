@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/58545549b45c01ccab00058c/train/javascript
+
+function calculate_total(subtotal, tax, tip) {
+    return +(subtotal + tax / 100 * subtotal + tip / 100 * subtotal).toFixed(2);
+}
