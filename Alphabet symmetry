@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/59d9ff9f7905dfeed50000b0/train/javascript
+
+function solve(arr){  
+  let alphabeth = "abcdefghijklmnopqrstuvwxyz";
+  return arr.map(x => x.toLowerCase().split('').filter((el,i) => 
+  i==alphabeth.indexOf(el)).length);
+}
