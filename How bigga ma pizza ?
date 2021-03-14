@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5e9c06f95ea5b30033903194/train/javascript
+
+function howBiggaMaPizza(blob, crust) {
+if(crust == "crispy")
+  return +Math.sqrt(Math.pow(blob,3)/6).toFixed(4);
+  else return  +Math.sqrt(Math.pow(blob,3)/30).toFixed(4); 
+}
