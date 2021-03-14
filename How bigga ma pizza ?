@@ -5,3 +5,17 @@ if(crust == "crispy")
   return +Math.sqrt(Math.pow(blob,3)/6).toFixed(4);
   else return  +Math.sqrt(Math.pow(blob,3)/30).toFixed(4); 
 }
+
+// Another Solution
+
+function howBiggaMaPizza(blob, crust) {
+  let radius = blob / 2;
+  let volume = (4 /3) * Math.PI * Math.pow(radius, 3);
+  let res;
+  if (crust === 'crispy'){
+    res = Math.sqrt(volume / Math.PI);
+  }else {
+    res = Math.sqrt(volume / (Math.PI * 5));
+  }
+  return res;
+}
