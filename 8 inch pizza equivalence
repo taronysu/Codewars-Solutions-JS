@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/599bb194b7a047b04d000077/train/javascript
+
+function howManyPizzas(n){
+  let s = n ** 2;
+    let pizzas = Math.floor(s / 64);
+    let slice = s % 64;
+  let slices = Math.round(slice/8);
+    return `pizzas: ${pizzas}, slices: ${slices}`;
+}
