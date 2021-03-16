@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/58475cce273e5560f40000fa/train/javascript
+
+function approxRoot(n) {
+    let base = Math.floor(n ** 0.5);
+    let lowest = base ** 2;
+    let greatest = (base + 1) ** 2;
+    let diff_gn = n - lowest;
+    let diff_lg = greatest - lowest;
+    return base + (diff_gn / diff_lg).toFixed(2)/1;
+  }
