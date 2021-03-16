@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/558f0553803bc3c4720000af/train/javascript
+
+var findDup=function(arr){
+let dubl= arr.filter((el,i)=>arr.indexOf(el)!==arr.lastIndexOf(el));
+return dubl[0];
+}
+
+
+// Another Solution 
+
+var findDup=function(arr){
+      return arr.reduce((a, b) => a + b, 0) - ((arr.length - 1) * arr.length)/2;
+}
