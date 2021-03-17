@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/5839edaa6754d6fec10000a2/train/javascript
+
+function findMissingLetter(array)
+{
+    return String.fromCharCode(array.find((c,i)=>array[i+1].charCodeAt()-c.charCodeAt()!==1).charCodeAt()+1)
+}
+
+
+// Another Solution
+
+
+function findMissingLetter(array) {
+    for (let i = 0; i < array.length; i++) {
+    if (array[i].charCodeAt() + 1 !== array[i + 1].charCodeAt()) {
+      return String.fromCharCode(array[i].charCodeAt() + 1);
+    }
+  }
+}
