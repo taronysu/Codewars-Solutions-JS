@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/51675d17e0c1bed195000001/train/javascript
+
+function solution(digits){
+  if (digits.length <= 5) return digits;
+  let currentLargest = digits.slice(0,5);
+  for (let i = 1; i <= digits.length - 5; i++) {
+     let test = digits.slice(i,i + 5);
+     if (test > currentLargest) {
+       currentLargest = test;
+     }
+  }
+  return +(currentLargest);
+}
