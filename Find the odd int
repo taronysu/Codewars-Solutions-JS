@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/54da5a58ea159efa38000836/train/javascript
+
+function findOdd(A) {
+  let counts = {};
+  for(let i=0;i<A.length;i++) {
+   let number = A[i];
+    if(!counts[number]) {
+      counts[number] = 1;
+    } else {
+      counts[number]++;
+    }
+  }
+  for(let number in counts) {
+   let count = counts[number];
+    if(count % 2 !== 0) {
+      return +number;
+    }
+  }  
+}
