@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/59de795c289ef9197f000c48/train/javascript
+
+function removeBMW(str){
+    if (typeof str !== "string") { return "This program only works for text." }
+  return str.replace(/[bmw]/gi,'');
+}
