@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/5b097da6c3323ac067000036/train/javascript
+
+function solve(a, b) {
+  let x = 0;
+  let y = 0;
+  if(a[0] > b[0]){x++;}
+  else if (a[0] < b[0]){y++;}
+    
+  if(a[1] > b[1]){x++;}
+  else if (a[1] < b[1]){y++;}
+  
+  if(a[2] > b[2]){x++;}
+   else if (a[2] < b[2]){y++;}
+  if(x > y){return `${x}, ${y}: Alice made "Kurt" proud!`; }
+  else if(y > x) {return `${x}, ${y}: Bob made "Jeff" proud!`;}
+  else {return `${x}, ${y}: that looks like a "draw"! Rock on!`;}
+}
