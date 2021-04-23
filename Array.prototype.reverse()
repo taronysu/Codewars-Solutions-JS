@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/53b2ff49b82af296ce001139/train/javascript
+
+Array.prototype.reverse = function() {
+  let a = this.splice(0);
+  while(a.length) {
+    this.push(a.pop());
+  }   
+  return this;
+  }
