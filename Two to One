@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5656b6906de340bd1b0000ac/train/javascript
+
+function longest(s1, s2) {
+return [...new Set(s1+s2)].sort().join('');
+}
+
+// Another Solution
+
+function longest(s1, s2) {
+ let s = (s1 + s2).split('').sort();
+ let res = s.filter((el, i) => i === s.indexOf(el)).join('')
+  return res
+}
