@@ -1,0 +1,27 @@
+https://www.codewars.com/kata/568dc69683322417eb00002c/train/javascript
+
+function tripleX(str){
+   for(let i=0;i<str.length-2;i++){
+        if(str.charAt(i)=='x')
+            if (str.charAt(i+1)=='x'&& str.charAt(i+2)=='x') {
+                return true;
+            } else {
+                return false;
+            }
+    }
+    return false;  
+}
+
+// Another Solution
+
+function tripleX(str){
+    return str.substr(str.indexOf('x')+1,2) === 'xx';
+}
+
+// Another Solution
+
+
+function tripleX(str){
+   let i = str.indexOf('x');
+  return str[i + 1] == 'x' && str[i + 2] == 'x';
+}
