@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/52ad1db4b2651f744d000394/train/javascript
+
+function reindeers(presents) {
+  if (presents <= 180) {
+  return 2 + Math.ceil(presents/30);
+  }
+  throw Error();
+}
