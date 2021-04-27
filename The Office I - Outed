@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/57ecf6efc7fe13eb070000e1/train/javascript
+
+function outed(meet, boss){
+    let avg = Object.keys(meet).reduce(function (acc, k) {
+        if (k === boss) {
+            acc += meet[k] * 2;
+        } else {
+            acc += meet[k];
+        }
+        return acc;}, 0) / Object.keys(meet).length;
+    if (avg <= 5) {
+        return 'Get Out Now!';
+    } else {
+        return 'Nice Work Champ!';
+    }
+}
