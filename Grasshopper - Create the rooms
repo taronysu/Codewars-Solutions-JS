@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/56a29b237e9e997ff2000048/train/javascript
+
+let rooms = {
+ room1:{
+  name:'Aaron', description:'js', completed:true},
+ room2:{
+  name:'Baron', description:'React', completed:false},
+ room3:{
+  name:'Cleopatra', description:'Python', completed:'Pro'},
+};
