@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/565ce4ab24ef4aee6a000074/train/javascript
+
+function isMatching(string, str1, str2) {
+  let s = string.toLowerCase().replace(/\s+/g, '').split('').sort().join('');
+  let strs =  (str1+str2).toLowerCase().replace(/\s+/g, '').split('').sort().join('');
+      return s === strs;
+  }
