@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/59eb28fb0a2bffafbb0000d6/train/javascript
+
+const binary = n => (n.toString(2).match(/1/g) || []).length;
+const sortFunction = (a, b) => (binary(b) - binary(a)) || a-b;
+const sortByBinaryOnes = (l) => l.sort(sortFunction);
