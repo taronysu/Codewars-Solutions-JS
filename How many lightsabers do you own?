@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/51f9d93b4095e0a7200001b8/train/javascript
+
+function howManyLightsabersDoYouOwn(name='alibaba')
+{
+  if (name == 'Zach') {
+    return 18;
+  }
+  return 0;
+}
