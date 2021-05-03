@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/56853c44b295170b73000007/train/javascript
+
+var isSquare = function(arr){
+  return arr.length ? arr.every((el) => !(Math.sqrt(el)%1)) : undefined;
+}
