@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/53f1015fa9fe02cbda00111a/train/javascript
+
+var Ghost = function() {
+  let colors = ["white", "yellow", "purple", "red"];
+  let rNum = Math.floor(Math.random() * (colors.length));
+  this.color = colors[rNum];
+};
