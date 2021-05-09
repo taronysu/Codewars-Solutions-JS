@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/56a24b4d9f3671584d000039/train/javascript
+
+function doubleCheck(str){
+    return /(.)\1/gi.test(str);
+  }
+  
+// Another Solution 
+
+function doubleCheck(str){
+    str = str.toLowerCase().split('');
+
+    for (let i = 0; i < str.length; i++) {
+      if (str[i] === str[i + 1])
+        return true;
+}
+  return false;
+  }
