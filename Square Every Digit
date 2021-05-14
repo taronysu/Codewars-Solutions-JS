@@ -1,0 +1,8 @@
+function squareDigits(num){
+let s = '';
+let arr = Array.from(String(num), Number);
+  for(let i = 0; i < arr.length; i++) {
+   s += Math.pow(arr[i],2);
+  }
+  return +s;
+}
