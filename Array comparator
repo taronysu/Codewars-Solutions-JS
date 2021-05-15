@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/561046a9f629a8aac000001d/train/javascript
+
+function matchArrays(v,r){
+    return v.filter((el)=>r.includes(el)).length;
+}
