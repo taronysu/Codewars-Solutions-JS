@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/57d448c6ba30875437000138/train/javascript
+
+function roots(a,b,c){
+     if(b**2>=4*a*c) {
+        return +(-b/a).toFixed(2);
+}
+  return null;
+}
