@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/57f609022f4d534f05000024/train/javascript
+
+function stray(numbers) {
+     var sorted = numbers.sort((a,b) => a - b);
+    return sorted[0] == sorted[1] ? sorted.pop() : sorted.shift();
+}
