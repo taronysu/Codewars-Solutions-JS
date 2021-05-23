@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/5bb904724c47249b10000131/train/javascript
+
+function points(games) {
+ let res = 0;
+  games.forEach(el => {
+    let [x, y] = el.split(':');
+    if (x > y) {
+      res += 3;
+    }   
+    else if (x === y) {
+      res += 1;
+    }
+  });
+  return res;
+}
