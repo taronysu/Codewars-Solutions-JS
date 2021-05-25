@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/5af15a37de4c7f223e00012d/train/javascript
+
+function menFromBoys(arr){
+  let s = [...new Set(arr)];
+  let even = s.filter(el => el % 2 == 0).sort((a, b) => a - b);
+  let odd = s.filter(el => el % 2 !== 0).sort((a, b) => b - a);
+  return [...even, ...odd];
+}
+
+// Another Solution 
+
+function menFromBoys(arr){
+  arr = arr.filter((el,i)=> i === arr.indexOf(el));
+  let men = arr.filter((el)=>el%2 === 0).sort((a,b)=>a-b);
+  let boys = arr.filter((el)=>el%2 !== 0).sort((a,b)=>b-a);
+  return men.concat(boys);
+}
