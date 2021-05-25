@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5697fb83f41965761f000052/train/javascript
+
+function filterLongWords(s, n) {
+  s = s.split(' ');
+return s.filter((el)=>el.length > n);
+}
