@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/55f8ba3be8d585b81e000080/train/javascript
+
+function detectOperator(a){
+  a = a+''
+  let op="no info";
+  let code = a.slice(1,4);
+
+if (code==='039') return 'Golden Telecom';
+else if (code==='050'||code==='066'||code==='095'||code==='099') return 'MTS';
+else if (code==='063'||code==='093') return 'Life:)';
+else if (code==='067'||code==='096'||code==='097'||code==='098') return 'Kyivstar';
+else if (code==='068') return 'Beeline';
+  return op;
+ }
