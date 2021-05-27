@@ -1,0 +1,9 @@
+function distinct(a) {
+  return  [...new Set(a)]
+}
+
+// Another Solution
+
+function distinct(a) {
+    return a.filter((el,i) => a.indexOf(el) === i) || [];
+}
