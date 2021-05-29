@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/597d75744f4190857a00008d/train/javascript
+
+var paintLetterboxes = function(start, end) {
+ let squad = [0,0,0,0,0,0,0,0,0,0];
+  for (let i = start; i <= end; i++) 
+    for (let el of String(i)) 
+              squad[el]++;
+  return squad;
+}
