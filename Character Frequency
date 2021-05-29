@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/548ef5b7f33a646ea50000b2/train/javascript
+
+function charFreq(message) {
+  let obj = {};
+  for (let i of message) {
+    if (!(i in obj)) obj[i] = 0;
+    obj[i]++;
+  }
+  return obj;
+}
