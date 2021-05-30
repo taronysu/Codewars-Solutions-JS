@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/573d498eb90ccf20a000002a/train/javascript
+
+function decode(string) {
+  return string.split("").map(function(el) {return el == 5 ? 0 : el == 0 ? 5 : 10 - el;}).join("");
+}
