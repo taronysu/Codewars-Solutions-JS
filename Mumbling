@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/javascript
+
+function accum(s) {
+let str = '';
+  for(let i=0; i<s.length;i++) {
+    str += s[i].toUpperCase() + s[i].toLowerCase().repeat(i) + (i !==s.length-1? '-':'');
+  }
+  return str;
+}
