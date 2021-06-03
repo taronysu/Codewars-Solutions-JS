@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/515decfd9dcfc23bb6000006/train/javascript
+
+function isValidIP(str) {
+    return str.split('.').filter((el)=>(el==Number(el).toString() && Number(el)<256 && Number(el)>=0)).length==4;
+}
