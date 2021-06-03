@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
+
+function narcissistic(value) {
+   let valStr = value+'';
+  let len = valStr.length;
+  return  valStr.split('').map(Number).reduce((acc,curr)=>acc+curr**len,0)===value;
+  }
