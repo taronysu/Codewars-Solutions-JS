@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/583952fbc23341c7180002fd/train/javascript
+
+function orderFood(list) {
+  let res = {};
+  for(let el of list) {
+    if(res[el.meal]) {
+      res[el.meal] += 1;
+    } else {
+      res[el.meal] = 1;
+    }  
+  }
+  return res;
+}
