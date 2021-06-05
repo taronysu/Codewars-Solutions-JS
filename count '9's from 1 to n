@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/55143152820d22cdf00001bb/train/python
+
+function number9(n){
+    let  num = 0;
+   let l = String(n).length;
+    while (l > 0) {
+      let  k = 10 ** l;
+      let  m = 10 ** (l-1);
+        num += Math.floor(n/k) * (l*m);
+        n = n % k;
+       if (n >= k-m) 
+            num += n % m + 1;
+        l -= 1;
+        }
+    return Number(num);
+  }
