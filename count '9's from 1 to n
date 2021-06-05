@@ -1,4 +1,4 @@
-https://www.codewars.com/kata/55143152820d22cdf00001bb/train/python
+https://www.codewars.com/kata/55143152820d22cdf00001bb/train/javascript
 
 function number9(n){
     let  num = 0;
