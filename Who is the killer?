@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5f709c8fb0d88300292a7a9d/train/javascript
+
+function killer(suspectInfo, dead) {
+for (let name in suspectInfo) {
+    let names = suspectInfo[name];
+    let killer = dead.every((killed) => {
+      return names.includes(killed);
+    });
+    if (killer) {
+      return name;
+    }
+  }
+}
