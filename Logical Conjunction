@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/55aea9253eccf9ec17000055/train/javascript
+
+function conjunction(op) {
+  return (op[0]===true && op[1]===true)? true: false;
+  }
