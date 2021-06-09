@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5552101f47fc5178b1000050/train/javascript
+
+function digPow(n, p){
+ let digits = n.toString().split('');
+  let s = 0;
+  for(let i=0; i<digits.length; i++){
+    s += Math.pow(digits[i], p+i);
+  }
+return (s%n == 0) ? s/n : -1;
+}
