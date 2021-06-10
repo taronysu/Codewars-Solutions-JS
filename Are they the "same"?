@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/550498447451fbbd7600041c/train/javascript
+
+function comp(a1, a2){
+ if (!a1 || !a2) return false;
+  return a1.map(el => el * el).sort()+ '' === a2.sort()+ '';
+}
