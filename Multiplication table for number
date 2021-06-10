@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5a2fd38b55519ed98f0000ce/train/javascript
+
+function multiTable(number) {
+ let mltTable = '';
+  for(let i = 1; i <= 10; i++){
+    mltTable += `${i} * ${number} = ${i*number}\n`;
+  }
+  return mltTable.slice(0,-1);
+}
