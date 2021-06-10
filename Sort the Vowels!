@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/59e49b2afc3c494d5d00002a/train/javascript
+
+function sortVowels(s){
+  if(typeof s == 'number' || s == null) {
+    return '';
+  }
+  let res = [];
+  let vowels = 'aouieAOUIE';
+  for(let i = 0; i < s.length;i ++) {
+    if (vowels.includes(s[i])) {
+      res.push('|' + s[i]);
+    } else {
+      res.push(s[i] + '|');
+    }
+  }
+  return res.join('\n');
+}
