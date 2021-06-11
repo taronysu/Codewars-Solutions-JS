@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/56e3cd1d93c3d940e50006a4/train/javascript
+
+function makeValley(arr) {
+  arr = arr.sort((a,b)=>a-b).reverse();
+ let left = [];
+ let right = [];
+  for(let i = 0; i<arr.length;i++) {
+    if(i%2) {
+      right.push(arr[i]);
+    } else {
+      left.push(arr[i]);
+    }
+  }
+  return left.concat(right.reverse());
+}
