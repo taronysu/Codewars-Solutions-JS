@@ -1,0 +1,25 @@
+https://www.codewars.com/kata/5a139df8ba2a14e041000055/train/javascript
+
+function findD(arr){
+for (let i = arr.length; i >= 0 ; i--) {
+    for (let k = 0; k < arr.length; k++) {
+        if (k == i) {
+            continue;
+        }
+        for (let j = k + 1; j < arr.length; j++) {
+            if (j == i) {
+                continue;
+            }
+            for (let d = j + 1; d < arr.length; d++) {
+                if (d == i) {
+                    continue;
+                }
+                if (arr[i] == arr[k] + arr[j] + arr[d]) {
+                    return arr[i];
+                }     
+            }
+        }
+    }
+}
+return null ;
+  }
