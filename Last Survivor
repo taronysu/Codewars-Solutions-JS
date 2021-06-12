@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/609eee71109f860006c377d1/train/javascript
+
+function lastSurvivor(letters, coords) {
+  for(let letter of coords) {
+    letters = letters.slice(0,letter) + letters.slice(letter+1,)
+  }
+  return letters;
+}
