@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/585af8f645376cda59000200/train/javascript
+
+function formatPoem(poem) {
+  return  poem.split('. ').join('.\n');
+}
+
+// Another Solution
+
+function formatPoem(poem) {
+ return  poem.replace(/\. /g, '.\n');
+}
