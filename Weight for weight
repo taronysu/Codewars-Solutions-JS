@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/55c6126177c9441a570000cc/train/javascript
+
+function sumOfNums(num) {
+    return num.split('').reduce((a, b) => a + +b, 0)
+} 
+
+function orderWeight(string) {
+    return string
+        .split(' ')
+        .sort((a, b) => sumOfNums(a) - sumOfNums(b) || a > b || -(a < b))
+        .join(' ');
+}
