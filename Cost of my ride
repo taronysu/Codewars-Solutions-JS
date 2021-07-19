@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/586430a5b3a675296a000395/train/javascript
+
+function insurance(age, size, numofdays){
+  let ins=0;
+  if (age<25) {ins+=10;}
+  if (size==='economy') {ins;}
+  else if (size==='medium') {ins+=10;}
+  else if (size==='full-size') {ins+=15;}
+  else {ins+=15;}
+  ins = numofdays*(50+ins);
+  return ins >= 0 ? ins : 0;
+}
