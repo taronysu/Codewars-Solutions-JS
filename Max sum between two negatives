@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/6066ae080168ff0032c4107a/train/javascript
+
+function maxSumBetweenTwoNegatives(arr) {
+let res = -1;
+  let c = 0;
+  let f = 0;
+    for (let el of arr) {
+        if (el<0) {
+            if (f) { res = Math.max(res,c); }
+            f = 1;
+              c = 0;
+          }
+        else{
+            c += f*el;
+          }
+      }
+    return res;
+  }
