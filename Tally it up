@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5630d1747935943168000013/train/javascript
+
+var scoreToTally = function(score){
+let al = ['','a','b','c','d','e'];
+let res = '';
+  while (score >= 5) {
+    res += 'e <br>';
+    score -= 5;
+  }
+  return res += al[score];
+}
