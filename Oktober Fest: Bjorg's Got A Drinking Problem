@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/59e71f7e23324365ce000026/train/javascript
+
+function gameOfFives(bav,scan){
+  return bav.filter(el=>el===5).length===scan.filter(el=>el===5).length ? 'Drinks All Round! Free Beers on Bjorg!':'Uh Oh! Bjorg\'s a donut! No beer for anyone!'
+}
