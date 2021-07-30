@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/559536379512a64472000053/train/javascript
+
+function playPass(s, n) {
+  return s.replace(/[A-Z]/g,l=>String.fromCharCode((l.charCodeAt(0)+n-65)%26+65))
+    .replace(/\d/g,d=>9-d)
+    .split('').map((el,i)=>i%2?el.toLowerCase():el.toUpperCase()).reverse().join('');
+}
