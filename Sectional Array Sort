@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/58ef87dc4db9b24c6c000092/train/javascript
+
+function sectSort(arr,s,f) {
+  f === 0 ? undefined : f;
+  let before=arr.slice(0,s);
+  let center=arr.slice(s,(s+f)||arr.length).sort((a,b)=>a-b);
+  let end;
+  f === undefined ? end=arr.slice(s,s):end=arr.slice(s+f);
+  return [...before,...center,...end];
+}
