@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/546f922b54af40e1e90001da/train/javascript
+
+function alphabetPosition(text) {
+  return text.toLowerCase().split('').map(a => a.charCodeAt() - 96).filter(l => l > 0 && l <= 26).join(' ');
+}
+
+// Another Solution
+
+function alphabetPosition(text) {
+  var result = "";
+  for (let i = 0; i < text.length; i++) {
+    let code = text.toUpperCase().charCodeAt(i)
+    if (code > 64 && code < 91) result += (code - 64) + " ";
+  }
+
+  return result.slice(0, result.length - 1);
+}
