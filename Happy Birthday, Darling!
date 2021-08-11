@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5e96332d18ac870032eb735f/train/javascript
+
+function womensAge(n) {
+  let age = 20 + n % 2;
+  let base = Math.floor(n / 2);
+  return `${n}? That's just ${age}, in base ${base}!`; 
+ }
