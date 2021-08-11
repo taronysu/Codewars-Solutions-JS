@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5912ded3f9f87fd271000120/train/javascript
+
+function countCorrectCharacters(correctWord, guess){
+if(correctWord.length !== guess.length) throw new Error('Different lengths');
+return [...correctWord].reduce((total, el, i) => (guess[i] === el ? total + 1 : total),0);
+}
