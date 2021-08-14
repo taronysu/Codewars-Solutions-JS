@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5803c0c6ab6c20a06f000026/train/javascript
+
+function swapVowelCase(str) {
+  str = str.split('')
+  let vowels = 'aouie';
+  for(let i = 0; i < str.length; i++) {
+    if(vowels.includes(str[i])) {
+      str[i]=str[i].toUpperCase();
+    } else if(vowels.toUpperCase().includes(str[i])) {
+      str[i]=str[i].toLowerCase();
+      }
+  }
+  return str.join('');
+}
