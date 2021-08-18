@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5966eeb31b229e44eb00007a/train/javascript
+
+function vaporcode(s) {
+  let arr = s.toUpperCase().split('')
+  let res = [];
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i] !== ' ') { 
+      res.push(arr[i]);
+    }
+  }
+  return res.join('  ');
+}
