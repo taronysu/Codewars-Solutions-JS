@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5866e6992e8d9cdbcd00040a/train/javascript
+
+function convertCF(num, scale = 'c'){
+ if(scale != "f" && scale != "c") throw new Error();
+  if(scale == "c")
+  {
+    return (num - 32) / 9 * 5;
+  }
+  return num * 9 / 5 + 32;
+}
