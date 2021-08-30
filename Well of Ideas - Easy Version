@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/57f222ce69e09c3630000212/train/javascript
+
+function well(x){
+let a =x.filter(el=>el.includes('bad'));
+let b=x.filter(el=>el.includes('good'));
+  for(let el of b)
+    if(b.length==1||b.length==2)
+      return "Publish!";
+  else if(b.length>2) return 'I smell a series!';
+  return 'Fail!';
+  }
+  
