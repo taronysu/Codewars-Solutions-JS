@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/javascript
+
+function moveZeros(arr) {
+  let nonZeros = arr.filter((num)=> num !== 0);
+  var zeros = arr.filter((num)=> num === 0);
+  return nonZeros.concat(zeros);
+}
