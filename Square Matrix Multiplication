@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/5263a84ffcadb968b6000513/train/javascript
+
+function matrixMultiplication(a, b){
+    let res = [];
+    let len = a.length;
+    for(let i=0; i<len; i++){
+        let row = [];
+        for(j=0; j<len; j++){
+            let s = 0;
+            for(k=0; k<len; k++) 
+              s += a[i][k]*b[k][j];
+            row.push(s);
+        }
+        res.push(row);
+    }
+    return res;
+}
