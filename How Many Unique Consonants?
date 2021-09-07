@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5a19226646d843de9000007d/train/javascript
+
+function countConsonants(str) {
+  return [...new Set(str.replace(/[^a-z]/gi,'')
+          .toLowerCase().split(''))]
+          .join('')
+          .replace(/[aeuio]/gi,'').length
+}
