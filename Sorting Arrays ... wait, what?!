@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/56bac4c34537cf1e270005a1/train/javascript
+
+Array.prototype.sort = function(){
+    let sorted = this.slice();
+    for (let i = 0; i < sorted.length; i++){
+        for (let j = 0; j < sorted.length; j++){
+            if (sorted[j] > sorted[j+1]){
+                let t = sorted[j+1];
+                sorted[j+1] = sorted[j];
+                sorted[j] = t;
+            }
+        }
+    }
+    return sorted;
+}
