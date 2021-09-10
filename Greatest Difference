@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/56b12e3ad2387de332000041/train/javascript
+
+function diff(str){
+ let res = str.map(el => Math.abs(eval(el)));
+  if (res.every(el => el === 0)) {
+    return false;
+    }
+  return str[res.indexOf(Math.max(...res))];
+}
