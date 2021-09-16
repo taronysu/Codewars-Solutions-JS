@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5a1d91698ba9145199000141/train/javascript
+
+function countTheAnimals(animals) {
+ let s = 0;
+  for (let i in animals){
+   s += parseInt(animals[i], 2)
+  }
+  return s;
+}
