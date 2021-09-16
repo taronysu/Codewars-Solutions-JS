@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5aca48db188ab3558e0030fa/train/javascript
+
+function calcType(a, b, res) {
+ if(res === a + b) {return 'addition';}
+    else if (res === a - b) { return 'subtraction';}
+    else if (res === a * b) {return 'multiplication';}
+    return 'division';
+}
