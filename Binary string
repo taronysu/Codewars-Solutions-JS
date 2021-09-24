@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/52654ea8e218b83553000666/train/javascript
+
+function toBinaryString(number){
+  if(number == 0) {
+    return '0';
+  }
+     let  binary = '';
+   while ( number > 0 ) 
+   { 
+     binary = ( number % 2 ) + binary; 
+     number = Math.floor( number / 2 );
+   }
+   return binary;
+  }
