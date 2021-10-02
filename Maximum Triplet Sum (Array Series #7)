@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5aa1bcda373c2eb596000112/train/javascript
+
+function maxTriSum(numbers){
+  let sorted= [...new Set(numbers.sort((a,b)=>b-a))]
+  let s = sorted.slice(0,3)
+  return s.reduce((a,b)=>a+b,0)
+}
