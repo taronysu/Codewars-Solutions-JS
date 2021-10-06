@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5ab3495595df9ec78f0000b4/train/javascript
+
+function binaryToString(binary){
+    let b  = binary.split('0b');
+    return b.map(bin => String.fromCharCode(parseInt(bin, 2))).slice(1).join('');
+}
