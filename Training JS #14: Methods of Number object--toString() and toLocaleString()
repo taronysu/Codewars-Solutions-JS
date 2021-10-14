@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/57238ceaef9008adc7000603/train/javascript
+
+const f = x => (x < 16 ? '0' : '') + x.toString(16) 
+function colorOf(r,g,b){ 
+  return "#" +  f(r) + f(g) + f(b);
+}
