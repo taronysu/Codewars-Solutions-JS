@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/59b844528bcb7735560000a0/train/javascript
+
+function isNice(arr){
+  if(arr.length === 0) {
+    return false;
+    }
+  return arr.every(el => arr.includes(el+1) || arr.includes(el-1));
+}
