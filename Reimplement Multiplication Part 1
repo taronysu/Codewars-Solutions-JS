@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/563cc8c1a3895d7d30000049/train/javascript
+
+function mul(a, b) {
+ let p = 0;
+  for(let i = 1; i <= a; i++) {
+    p += b;
+    }
+    return p;
+}
