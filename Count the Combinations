@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/58e67378fd2d897b8a000110/train/javascript
+
+function numCombo(arr, num){
+  let s = arr.reduce((sum, el) => sum + el,0);
+  return arr.filter(el => s - el === num).length;
+}
