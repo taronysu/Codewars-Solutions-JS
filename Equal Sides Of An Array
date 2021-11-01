@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5679aa472b8f57fb8c000047/train/javascript
+
+function findEvenIndex(arr) {
+let id = -1;
+    for(let i = 0; i < arr.length; i++){
+      const ls = arr.slice(0,i).reduce((a,b)=>a+b,0);
+      const rs = arr.slice(i+1).reduce((a,b)=>a+b,0);
+      if(ls === rs) {
+        id = i;
+        break;
+      }
+    }
+    return id;
+  }
