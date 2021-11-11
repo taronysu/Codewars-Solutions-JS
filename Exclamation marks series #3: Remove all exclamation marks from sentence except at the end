@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/57faefc42b531482d5000123/train/javascript
+
+function remove(s){
+  let front = "";
+  for(let i = 0; i < s.length; i++){
+    if(s[i] !== "!"){
+      front += s[i];
+    }
+  }
+  let end = "";
+  for(let j = s.length - 1; s[j] === "!"; j--){
+    end += s[j];
+  }
+  return front + end;
+}
