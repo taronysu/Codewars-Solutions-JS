@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/53d16bd82578b1fb5b00128c/train/javascript
+
+function grader(x) {
+  if (0.9 <= x &&  x <= 1) return "A"
+  else if (0.8 <= x && x < 0.9) return "B"
+  else if (0.7 <= x && x < 0.8) return "C"
+  else if (0.6 <= x && x < 0.7) return "D"
+  else return "F"
+}
