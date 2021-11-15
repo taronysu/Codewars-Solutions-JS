@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5894017082b9fb62c50000df/train/javascript
+
+function areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) {
+    return (yourLeft===friendsLeft||yourLeft===friendsRight)
+    &&(yourRight===friendsLeft||yourRight===friendsRight);  
+}
