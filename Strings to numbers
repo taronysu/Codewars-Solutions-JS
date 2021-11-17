@@ -1,0 +1,3 @@
+https://www.codewars.com/kata/5872d6eba44cfcd500000153/train/javascript
+
+let convert = a => a.map(el=>+(el))
