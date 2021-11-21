@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/586bca7fa44cfc833e00005c/train/javascript
+
+function createArrayOfTiers(num) {
+  num = num + '';
+  let res = [];
+  for(let i = 0; i < num.length;i++) {
+    res.push(num.slice(0,i+1));
+  }
+    return res;
+}
