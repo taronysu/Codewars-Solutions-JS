@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/514aa0dc21607ae236000017/train/javascript
+
+var name = 'Abe'
+
+const greet_abe = () => {
+  return `Hello, ${name}!`
+}
+
+const greet_ben = () => {
+ let name = 'Ben'
+  return `Hello, ${name}!`
+}
