@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/584466950d3bedb9b300001f/train/javascript
+
+function stringCounter(inputS, charS){                       
+      let count = 0;
+            for (let i = 0; i < inputS.length; i++  ){
+               if (inputS[i] == charS) count++;
+            }
+            return count;
+}
