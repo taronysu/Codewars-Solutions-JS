@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/58a0697ef636cac09c000014/train/javascript
+
+function makeYoutubeLink(str){
+  let link = str.split('/').reverse()[0].split('=').reverse()[0]
+  return 'https://www.youtube.com/embed/' + link;
+}
