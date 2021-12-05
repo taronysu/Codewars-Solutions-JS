@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/55e9529cbdc3b29d8c000016/train/javascript
+
+function charToAscii(string){
+ return string.length ? [...new Set([...string].filter(c => /[a-z]/gi.test(c)))].reduce(
+        (r, c) => ({ ...r, [c]: c.charCodeAt() }),{}) : null;
+}
