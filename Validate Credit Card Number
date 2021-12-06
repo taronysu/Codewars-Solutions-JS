@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/5418a1dd6d8216e18a0012b2/train/javascript
+
+function validate(n){
+  let s = 0;
+  while (n > 0) {
+    let a = n % 10;
+    n = Math.floor(n / 10); 
+    let b = (n % 10) * 2;
+    n = Math.floor(n / 10); 
+    if (b > 9) {
+      b -= 9;
+    }
+    
+    s += a + b;
+  }
+  
+  return s % 10 === 0;
+}
