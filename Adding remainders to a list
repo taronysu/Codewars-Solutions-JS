@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5acc3634c6fde760ec0001f7/train/javascript
+
+function solve(nums, div) {
+  let arr = [];
+  for (let el of nums) {
+    arr.push(el % div + el)
+  }
+  return arr;
+}
