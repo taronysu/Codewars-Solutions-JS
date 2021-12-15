@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/550e9fd127c656709400024d/train/javascript
+
+function cubeSum(n, m){
+   let nn = Math.min(n,m);
+   let mm = Math.max(n,m);
+  if (n == m) {
+    return 0;
+  }
+  let arr = [];
+  for(let i = nn + 1; i < mm + 1; i ++) {
+    arr.push(i);
+  }
+  let c = 0;
+  for (let el of arr) {
+    c += el ** 3;
+  }
+  return c;
+}
