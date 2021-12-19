@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/559f44187fa851efad000087/train/javascript
+
+function sevenAte9(str){
+   let res = str[0];
+  for (let i = 1; i < str.length; i++) {
+    res += (str[i]==9 && str[i-1]==7 && str[i+1]==7)? '' : str[i];
+  }
+  return res;
+}
+
+// Another Solution
+
+function sevenAte9(str){
+  return str.replace(/79(?=7)/g, '7');
+}
