@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/56dbe0e313c2f63be4000b25/train/javascript
+
+function vertMirror(strng) {
+    return strng.map(strng => [...strng].reverse().join(''));
+}
+function horMirror(strng) {
+    return strng.reverse();
+}
+function oper(fct, s) {
+    return fct(s.split("\n")).join("\n");
+}
