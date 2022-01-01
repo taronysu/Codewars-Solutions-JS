@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5624e574ec6034c3a20000e6/train/javascript
+
+function hammingDistance (a, b) {
+ let error = 0;
+  for(let i = 0; i < a.length; i++){
+  if(a[i]!=b[i])  { 
+    error++; }
+  }
+  return error;
+}
