@@ -1,0 +1,20 @@
+https://www.codewars.com/kata/5aa28655b005a8fcd10027df/train/javascript
+
+function flatten(input) {
+  const stack = [...input];
+  const res = [];
+  while (stack.length) {
+    const next = stack.pop();
+    if (Array.isArray(next)) {
+      stack.push(...next);
+    } else {
+      res.push(next);
+    }
+  }
+  return res.reverse();
+}
+
+
+const findAndSumm = (arr1, arr2) => {
+return flatten(arr1).concat(flatten(arr2)).reduce((el,s)=>el + s,0);
+}
