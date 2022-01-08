@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/563700da1ac8be8f1e0000dc/train/javascript
+
+var maxRedigit = function(num) {
+if (num < 1 || String(num).length !== 3)
+  return null;
+  return +([...String(num)].sort((a, b) => +b - +a).join(''))
+}
