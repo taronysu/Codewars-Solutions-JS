@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/55e3f27d5dee52d8dd0000a9/train/javascript
+
+function diffBig2(arr) {
+  let MaxNum = 0, sec = 0;
+  for (let i = 0; i < arr.length; i ++) {
+    if (arr[i] >= MaxNum) {
+      sec = MaxNum;
+      MaxNum = arr[i];
+    }
+    else if (arr[i] > sec) {
+      sec = arr[i];
+    }
+  }
+  return MaxNum - sec;
+}
