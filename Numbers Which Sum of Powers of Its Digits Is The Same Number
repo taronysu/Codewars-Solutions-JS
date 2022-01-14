@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/560a4962c0cc5c2a16000068/train/javascript
+
+function eqSumPowdig(hMax, exp) {
+ let res = [];
+  for (let i = 2; i <= hMax; i++) {
+    let c = i.toString().split('').reduce((e, v) => e + Math.pow(v, exp), 0);
+    if (c == i) {
+      res.push(c);
+    }
+  }
+  return res;
+}
