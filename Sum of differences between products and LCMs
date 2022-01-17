@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/56e56756404bb1c950000992/train/javascript
+
+const gcd = (x, y) => (x === 0 ? y : gcd(y % x, x))
+const lcm = (x, y) => (x * y === 0 ? 0 : (x * y) / gcd(x, y))
+
+function sumDifferencesBetweenProductsAndLCMs(pairs) {
+ return pairs.map(([f, s]) => f * s - lcm(f, s)).reduce((t, i) => t + i, 0);
+  }
