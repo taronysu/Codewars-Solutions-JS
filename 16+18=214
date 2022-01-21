@@ -1,0 +1,21 @@
+https://www.codewars.com/kata/5effa412233ac3002a9e471d/train/javascript
+
+function add(num1, num2) {
+   let a = num1.toString();
+        let b = num2.toString();
+        let maxLength = Math.max(a.length, b.length);
+        let res = '';
+
+        for (let i = maxLength - 1; i >= 0; --i) {
+
+            let iA = a.length - (i + 1);
+            let iB = b.length - (i + 1);
+
+            let vA = (iA >= 0)? parseInt(a[iA]) : 0;
+            let vB = (iB >= 0)? parseInt(b[iB]) : 0;
+
+            res += (vA + vB);
+        }
+
+        return +res;
+    }
