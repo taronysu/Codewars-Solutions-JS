@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5939ab6eed348a945f0007b2/train/javascript
+
+function longestWord(str){
+  let word = str.split(' ').reverse().sort(function(a, b) { return b.length - a.length; });
+  return word[0];
+}
