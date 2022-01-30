@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57f22b0f1b5432ff09001cab/train/javascript
+
+function well(x){
+  const t = (x.join('').match(/good/gi) || []).length;
+
+  if (t > 2) {
+    return 'I smell a series!'; }
+  if (t === 0) {
+    return 'Fail!'; }
+  return 'Publish!';
+}
