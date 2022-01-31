@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/57b2020eb69bfcbf64000375/train/javascript
+
+function nextLetter(str) {
+ return str.replace(/[a-zA-z]/g,function(a){
+        if (String.fromCharCode(a.charCodeAt(0) + 1) === '[') {
+            return 'A';
+          } else if (String.fromCharCode(a.charCodeAt(0) + 1) === '{') {
+            return 'a';}
+        else{
+         return String.fromCharCode(a.charCodeAt(0)+1);}
+     });
+ }
