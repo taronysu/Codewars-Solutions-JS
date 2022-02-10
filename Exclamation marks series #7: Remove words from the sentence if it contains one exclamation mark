@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/57fafb6d2b5314c839000195/train/javascript
+
+function remove (s) {
+  let res = [];
+  s = s.split(' ')
+  for(let el of s) {
+    if ((el.match(/!/g) || []).length !== 1) {
+      res.push(el);
+    }
+  }
+  return res.join(' ');
+}
