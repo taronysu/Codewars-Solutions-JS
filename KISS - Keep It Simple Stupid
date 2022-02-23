@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/57eeb8cc5f79f6465a0015c1/train/javascript
+
+function isKiss( words ){
+   let s = words.split(' ');
+  return s.every(word => word.length <= s.length) ? "Good work Joe!"
+  :"Keep It Simple Stupid";
+}
