@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/58941fec8afa3618c9000184/train/javascript
+
+function growingPlant(upSpeed, downSpeed, desiredHeight) {
+ let day = 0
+   let  h = 0
+    while (h <= desiredHeight) {
+        h += upSpeed
+        day += 1
+        if (h <  desiredHeight)
+           { h -= downSpeed
+         } else {
+            return day  
+           }
+      }  
+}
