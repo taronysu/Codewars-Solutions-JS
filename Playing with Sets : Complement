@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5884e9ccf72916207900010f/train/javascript
+
+function diff(s1, s2){
+  return new Set([...s1].filter((l) => !s2.has(l)));
+}
