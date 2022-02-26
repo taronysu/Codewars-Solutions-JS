@@ -1,0 +1,20 @@
+https://www.codewars.com/kata/581534b8d5fae4428e00001e/train/javascript
+
+Number.prototype.add=function(x){
+  return this + x;
+}
+Number.prototype.sub=function(x){
+  return this - x;
+}
+Number.prototype.div=function(x){
+  return this / x;
+}
+Number.prototype.mul=function(x){
+  return this * x;
+}
+Number.prototype.pow=function(x){
+  return this ** x;
+}
+Number.prototype.sqr=function(){
+  return this ** 0.5;
+}
