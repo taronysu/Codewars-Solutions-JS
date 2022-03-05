@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/580755730b5a77650500010c/train/javascript
+
+function sortMyString(S) {
+    let a = S.split('').filter((l, i) => i % 2 == 0).join('');
+    let b = S.split('').filter((l, i) => i % 2 !== 0).join('');
+    return a + ' ' + b;
+}
