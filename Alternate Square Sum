@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/559d7951ce5e0da654000073/train/javascript
+
+function alternateSqSum(arr){
+  return arr.map((el, i) => i % 2 ? el ** 2: el)
+    .reduce((s, e) => s + e, 0);
+}
