@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/55b95c76e08bd5eef100001e/train/javascript
+
+function countArara(n) {
+  const a = "adak ";
+    if (n % 2 == 0) { 
+      return a.repeat((n-2)/2) + a
+      }
+    return a.repeat([n/2])+"anane"
+}
+
+// Another Solution
+
+function countArara(n) {
+   const res = [];
+    for (let i = 2; i <= n; i+=2) {
+      res.push("adak");
+    }
+    if (n % 2 != 0) {
+      res.push("anane");
+    }
+    
+    return res.join(" ");
+}
