@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/57ed56657b45ef922300002b/train/javascript
+
+function broken(x){
+  let res = ''
+   for (let el of x) {
+     if (el == '0') res += '1'
+     else {
+       res += '0'
+     }
+   }
+  return res
+}
+
+// Another Solution
+
+function broken(x){
+    return x.split('').map(d => d === "0" ? "1" : "0").join('')
+}
