@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/59f7a0a77eb74bf96b00006a/train/javascript
+
+function golfScoreCalculator(par, score){
+  let arr = [];
+  for (let i = 0; i < score.length; i++) {
+    arr.push(+score[i] - +par[i])
+  }
+  return arr.reduce((a,b)=>a+b,0)
+}
+
+// Another Solution
+
+const sum = s => [...s].map(Number).reduce((a,e)=>a+e);
+
+const golfScoreCalculator = (p, s) => sum(s) - sum(p);
