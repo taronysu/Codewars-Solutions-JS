@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/582887f7d04efdaae3000090/train/javascript
+
+function findSenior(list) {
+    let oldestPerson = list[0].age
+    let senDev = []
+    for (let dev of list) {
+        if (dev.age == oldestPerson) {
+            senDev.push(dev)
+          } else if (dev.age > oldestPerson) {
+            oldestPerson = dev.age
+            senDev = []
+            senDev.push(dev)
+            }
+      }
+    return senDev
+    }
