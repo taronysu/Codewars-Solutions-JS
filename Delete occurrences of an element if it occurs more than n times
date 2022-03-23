@@ -1,0 +1,30 @@
+https://www.codewars.com/kata/554ca54ffa7d91b236000023/train/javascript
+
+function deleteNth(arr,n){
+   let count = 0;
+  for(let i = arr.length; i > 0; i--){
+    for(let j = 0; j < arr.length; j++){
+      if (arr[i] == arr[j]){
+        count += 1
+      }
+    }
+    if(count > n){
+      arr.splice(i,1);
+      i = arr.length;
+    }
+        count = 0;
+  }
+  return arr;  
+}
+
+// Another Solution
+
+function deleteNth(arr,n){
+  let  res = []
+  arr.forEach((el) => {
+    if (res.filter(i => i === el).length < n){
+      res.push(el);
+    }
+  })
+  return res;
+}
