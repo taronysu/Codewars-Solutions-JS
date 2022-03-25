@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/580a0347430590220e000091/train/javascript
+
+function area(d,l){
+  if (l >= d) {
+        return 'Not a rectangle';
+    }
+    let x = Math.sqrt(d*d-l*l);
+    let a = x*l;
+    return Math.round(a*100)/100;
+}
