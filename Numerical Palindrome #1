@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/58ba6fece3614ba7c200017f/train/javascript
+
+function palindrome(num) { 
+   return (typeof num == 'number' && num > 0) ?
+   (num + '') == (num + '').split('').reverse().join('') : 'Not valid'
+  }
