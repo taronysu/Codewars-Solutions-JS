@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5827bc50f524dd029d0005f2/train/javascript
+
+function getFirstPython(list) {
+ let language = list.find(l => l.language === 'Python');
+  return language ? `${language.firstName}, ${language.country}`
+  : 'There will be no Python developers';
+}
