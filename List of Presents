@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5a84d485742ba347b90006b7/train/javascript
+
+function howManyGifts(maxBudget, gifts){
+  gifts = gifts.sort((a,b)=>a-b)
+  let s = 0
+  let count = 0
+  for(let el of gifts){
+      if(s + el <= maxBudget) { 
+      s+=el
+      count++
+      }
+    }
+  return count
+}
