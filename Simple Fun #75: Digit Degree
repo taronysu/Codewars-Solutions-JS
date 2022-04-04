@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/589422431a88082ea600002a/train/javascript
+
+function digitDegree(n) {
+  let c = 0;
+  while(n > 9) {
+    n = +n.toString().split('').reduce((s, el) => s + +el, 0);
+    c++;
+  }
+  return c;
+}
