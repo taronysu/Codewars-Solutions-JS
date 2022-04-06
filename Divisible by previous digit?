@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5a2809dbe1ce0e07f800004d/train/javascript
+
+function divisibleByLast(n) {
+  n = n + '';
+  let arr = []
+    for (let i = 0; i < n.length; i++) {
+        if (n[i] % n[i-1]== 0)
+          {  arr.push(true) }
+        else {
+            arr.push(false)
+          }
+      }
+    return arr
+}
