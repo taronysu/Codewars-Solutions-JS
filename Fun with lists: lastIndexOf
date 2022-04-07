@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/581c867a33b9fe732e000076/train/javascript
+
+function lastIndexOf(head, value) {
+  let c = 0, 
+  curr = head;
+  let res = []
+  while(curr !== null) {
+    res.push(curr.data);
+    curr = curr.next;
+    c+=1;
+  }
+  return res.lastIndexOf(value);
+}
