@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/562d8d4c434582007300004e/train/javascript
+
+obfuscate = function(email) {
+  let s = ''
+    for (let el of email) {
+        if (el === '@')  s += ' [at] '
+        else if (el === '.') s += ' [dot] '
+        else {
+            s += el;
+          }
+      }
+  return s;
+}
