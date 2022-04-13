@@ -1,0 +1,3 @@
+https://www.codewars.com/kata/5a1a76c8a7ad6aa26a0007a0/train/javascript
+
+const lifePathNumber = (str) => +str.replace(/-/g, "") % 9 || 9;
