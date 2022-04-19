@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/55b2549a781b5336c0000103/train/javascript
+
+function comparePowers([a,b],[c,d]){
+  let x = Math.log10(a) * b;
+  let y = Math.log10(c) * d;
+  return x === y ? 0 : x >y ? -1 : 1;
+}
