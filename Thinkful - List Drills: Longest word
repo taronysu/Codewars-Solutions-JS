@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/58670300f04e7449290000e5/train/javascript
+
+function longest(words) {
+  return Math.max(...words.map((el=>el.length)))
+}
