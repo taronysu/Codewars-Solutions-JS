@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/56d3e702fc231fdf72001779/train/javascript
+
+const sxore = function(n){
+  return [n, 1, n + 1, 0][n % 4];
+}
