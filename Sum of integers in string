@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/598f76a44f613e0e0b000026/train/javascript
+
+function sumOfIntegersInString(s){
+  return (s.match(/\d+/g) || []).map(Number).reduce((a, b) => a + b, 0)
+}
