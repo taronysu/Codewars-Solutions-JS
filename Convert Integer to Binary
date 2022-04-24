@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/55606aeebf1f0305f900006f/train/javascript
+
+function toBinary(n){
+  return (n >>> 0).toString(2)
+}
