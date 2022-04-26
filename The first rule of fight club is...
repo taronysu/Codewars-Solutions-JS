@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5826d9d9392e28d0bd000125/train/javascript
+
+function stripWords(text) {
+  return  text.replace(/Fight Club/gi, "Knitting Club")
+}
