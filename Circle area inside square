@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5899aa695401a83a5c0000c4/train/javascript
+
+function squareAreaToCircle(size){
+  let r = Math.sqrt(size);
+  return Math.PI * (r/2) ** 2;
+}
