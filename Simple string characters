@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5a29a0898f27f2d9c9000058/train/javascript
+
+function solve(s){
+  return [/[A-Z]/, /[a-z]/, /[0-9]/, /[\W]/].map(l => s.split(l).length-1)
+}
