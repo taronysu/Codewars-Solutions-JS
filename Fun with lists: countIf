@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5819081d056d4bdd410004f8/train/javascript
+
+function countIf(head, p) {
+   let c = 0
+   while (head) {
+      if (p(head.data)) {
+        c ++
+     }
+    head=head.next
+  }
+  return c
+}
