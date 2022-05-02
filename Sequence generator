@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/56ba8a9b022c16017d0001f3/train/javascript
+
+function sequence(n, pattern) {
+  let res = [];
+   for(let i = 0; i < n; i++)
+      res.push(pattern);
+  if(typeof pattern === "function") {
+    return  res.map(pattern);
+  }
+  else {
+   
+    return res;
+  }
+}
