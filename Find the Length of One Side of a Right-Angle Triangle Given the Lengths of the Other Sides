@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/58dd82aeee8586d9b800007e/train/javascript
+
+function pythagorean(a, b){
+  return Math.sqrt(a** 2 + b ** 2)
+}
