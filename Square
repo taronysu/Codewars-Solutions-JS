@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/599b23c7d7dd7216640000a6/train/javascript
+
+function squareRoot(numbers){
+    let s = numbers.reduce((s,el)=>s+el,0);
+   let wholeNum = Math.sqrt(s)
+    if (wholeNum % 1 == 0) {
+      return wholeNum
+    }
+  return s
+}
