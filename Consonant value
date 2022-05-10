@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/59c633e7dcc4053512000073/train/javascript
+
+function solve(s) {
+  s = s.toLowerCase();
+  let arr = s.replace(/[aeiuo]/g,' ')
+  arr = arr.split(' ').map(l=>l.split('').map(l=>l.charCodeAt()-96).reduce((a,b)=>a+b,0));
+  return Math.max(...arr);
+}
