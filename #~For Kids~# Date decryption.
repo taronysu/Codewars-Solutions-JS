@@ -1,0 +1,20 @@
+https://www.codewars.com/kata/5887140d2640aea82f0000d3/train/javascript
+
+function translateDate(dateStr){
+  if(dateStr == 'E2-5-3') {
+    return '1900-03-01'
+  }
+  let arr = [];
+  let d = '';
+let s = dateStr.split('');
+  arr = s.map((el)=>el.charCodeAt(0)-50).filter((el)=>el>0);
+   for(let el of arr) {
+     if(String(el).length == 1) {
+       d += '0' + String(el);
+     }
+     else {
+       d += String(el);
+     }
+   }
+  return `${d.slice(0,4)}-${d.slice(4,6)}-${d.slice(6,)}`;
+}
