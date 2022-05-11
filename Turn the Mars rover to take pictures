@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/588e68aed4cff457d300002e/train/javascript
+
+function turn(current, target) {
+  let dir = current + target
+  if  (['NE', 'ES', 'SW', 'WN'].includes(dir)) {
+        return 'right'
+    }
+    else {
+        return 'left'
+    }
+  }
