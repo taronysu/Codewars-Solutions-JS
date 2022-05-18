@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/57b365f81fae8a0571000142/train/javascript
+
+function calculateSpeed(distance, time) {
+  let s = 0
+  let t = 0
+  if (distance.slice(-2)=='km') {
+    s = distance.slice(0,-2) * 1000
+    } else { s = distance.slice(0,-1)
+            }
+  if (time.slice(-3) == 'min') {
+    t = time.slice(0,-3) * 60
+    } else  { t = time.slice(0,-1)
+  }
+  return ((s/t)* 2.23694).toFixed(0)+'mph'
+}
