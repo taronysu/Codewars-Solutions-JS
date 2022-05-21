@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/541a354c39c5efa5fa001372/train/javascript
+
+function ipToNum(ip) {
+   return ip.split(".").reduce((i,e)=>i * 256 + Number(e));
+}
+
+function numToIp(num) {
+    var d = num % 256;
+    for (var i = 3; i > 0; i--) 
+    { 
+        num = Math.floor(num/256);
+        d = num % 256 + '.' + d;
+    }
+    return d;
+}
