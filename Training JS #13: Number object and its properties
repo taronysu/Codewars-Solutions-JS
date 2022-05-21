@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5722fd3ab7162a3a4500031f/train/javascript
+
+function whatNumberIsIt(n){
+  let a = 'Input number is '
+if (Number.isNaN(n)) return a + 'Number.NaN'
+  if (Number.isSafeInteger(n)) return  a + n
+
+  if (n === Number.MAX_VALUE) return a + 'Number.MAX_VALUE'
+  if (n === Number.MIN_VALUE) return a + 'Number.MIN_VALUE'
+  if (n === Number.NEGATIVE_INFINITY) return a + 'Number.NEGATIVE_INFINITY'
+  if (n === Number.POSITIVE_INFINITY) return a + 'Number.POSITIVE_INFINITY'
+}
