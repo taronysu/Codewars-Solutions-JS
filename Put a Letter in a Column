@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/563d54a7329a7af8f4000059/train/javascript
+
+function buildRowText(index, character) {
+ const arr=[];
+  for (let i=0;i<=8;i++){
+  if (i===index){
+  arr.push(`|${character}`)
+  } else {
+  arr.push('|')}
+  }
+  arr.push('|')
+  return  arr.join(' ').replace(/\w\s/g,`${character}`)
+}
