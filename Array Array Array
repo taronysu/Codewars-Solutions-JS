@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/57eb936de1051801d500008a/train/javascript
+
+const isNumber = value => typeof value === 'number'
+
+const explode = x => {
+  const [a, b] = x
+  if (isNumber(a) && isNumber(b)) {
+    return new Array(a + b).fill(x)
+    }
+  else if (isNumber(a)) {
+    return new Array(a).fill(x)
+    }
+  else if (isNumber(b)) {
+    return new Array(b).fill(x)
+    }
+  return 'Void!'
+}
