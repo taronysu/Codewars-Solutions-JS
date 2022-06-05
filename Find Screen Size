@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5bbd279c8f8bbd5ee500000f/train/javascript
+
+function findScreenHeight(width, ratio) {
+  let d = ratio.indexOf(':')
+  let a = ratio.slice(0,d)
+  let b = ratio.slice(d+1,)
+  return `${width}x${width*b/a}`
+}
