@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5208f99aee097e6552000148/train/javascript
+
+function solution(string) {
+let camel = '';
+  for(let i = 0; i < string.length;i++){
+    let letter = string[i];
+    if(letter === letter.toUpperCase()) {
+      camel += ` ${letter}`;
+    } else {
+      camel += letter;
+    }
+  }
+  return camel;
+}
