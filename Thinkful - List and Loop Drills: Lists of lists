@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/586e1d458cb711f0a800033b/train/javascript
+
+function processData(data){
+    let r = 1
+    for (let d of data) {
+        r *= d[0] - d[1]
+      }
+    return r
+}
+
+// Another Solution
+
+function processData(data){
+  return data.reduce((p, el) => p * (el[0] - el[1]), 1)      
+}
