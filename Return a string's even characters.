@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/566044325f8fddc1c000002c/train/javascript
+
+function evenChars(s) {
+  if(s.length < 2 || s.length > 100) {
+    return 'invalid string'
+  }
+  s = s.split('')
+  let arr = []
+ for(let i = 1; i < s.length;i+=2) {
+   arr.push(s[i])
+ }
+  return arr
+}
