@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/62a611067274990047f431a8/train/javascript
+
+function alternate(n, first, second){
+  let arr = []
+  for(let i = 0; i < n; i++) {
+    arr.push(i % 2 ? second : first)
+  }
+   return arr
+}
