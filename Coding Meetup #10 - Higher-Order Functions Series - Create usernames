@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/582a53ed261c2af9d200018c/train/javascript
+
+function addUsername(list) {
+  let year = Date.prototype.getFullYear();
+  list.forEach(x => x.username = x.firstName.toLowerCase() + x.lastName[0].toLowerCase() + (year - x.age))
+  return list;
+}
