@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57cf50a7eca2603de0000090/train/javascript
+
+function moveTen(s){
+  let al = 'abcdefghijklmnopqrstuvwxyz';
+  let str = '';
+  for(let el of s) {
+    let i = al.indexOf(el);
+    str+= al[(i + 10)%26];
+  }
+  return str;
+}
