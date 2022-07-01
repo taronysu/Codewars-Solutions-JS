@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/58e43389acfd3e81d5000a88/train/javascript
+
+function circleCircumference(circle) {
+  return 2 * circle.radius * 3.141592653589793238
+}
