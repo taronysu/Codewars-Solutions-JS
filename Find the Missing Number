@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/57f5e7bd60d0a0cfd900032d/train/javascript
+
+function missingNo(nums) {
+  let n = nums.length
+  let s = n * (n+1)/2
+  let total = nums.reduce((a,b)=>a + b, 0)
+  return s - total
+}
