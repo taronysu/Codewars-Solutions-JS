@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5532686f0408dfe458000117/train/javascript
+
+var evalLikes = function(words){
+  let count = 0
+ for(let el of words) {
+   if (el.toLowerCase() == 'like')  {
+     count += 1
+   } 
+ }
+  return (words.length/20 < count) ? true : false
+    return true
+}
