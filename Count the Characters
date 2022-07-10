@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/577ad961ae2807182f000c29/train/javascript
+
+function countChar(str, char) {
+  str = str.toLowerCase()
+  char = char.toLowerCase()
+  let s = 0
+  for(let el of str.split('')) {
+    if(el == char) {
+      s += 1
+    }
+  }
+  return s
+  }
