@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/583203e6eb35d7980400002a/train/javascript
+
+function countSmileys(arr) {
+  const smileys = [":)",";)",":-)",";-)",";~)",":~)",":D",";D",":-D",":~D",";-D",";~D"];
+  let c = 0;
+  for (let i=0; i<arr.length; i++){
+  for (let j=0; j<smileys.length; j++){
+    if (arr[i]===smileys[j]){
+      c++;
+    }
+   }
+  }
+return c;
+}
