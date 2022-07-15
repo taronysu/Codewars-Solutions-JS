@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/55e7d9d63bdc3caa2500007d/train/javascript
+
+function smallest(n) {
+let gcd = (x,y) => y == 0 ? x : gcd(y, x%y);
+    return  [...Array(n)].map((z,i)=>i+1).reduce((x,y)=>x*y/gcd(x,y),1);
+}
