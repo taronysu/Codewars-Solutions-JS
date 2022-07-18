@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5732b0351eb838d03300101d/train/javascript
+
+function blackAndWhite(arr){
+ let type = ''
+  if (!Array.isArray(arr)) type = 'fake'
+  else if (arr.includes(5) && arr.includes(13)) type = 'black'
+  else if (!(arr.includes(5) && arr.includes(13))) type = 'white'
+  return `It\'s a ${type} array`
+} 
