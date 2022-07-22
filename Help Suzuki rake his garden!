@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/571c1e847beb0a8f8900153d/train/javascript
+
+function rakeGarden(garden) {
+   return garden.split(' ').map((el)=>el!='rock'? 'gravel' : el).join(' ')
+  }
+  
+// Another Solution
+
+function rakeGarden(garden) {
+  let r = garden.split(' ');
+  
+  for(let i = 0; i < r.length; i++) {
+    if(r[i] !== 'rock') {
+      r[i] ='gravel';   
+    }
+  } 
+  return r.join(' ');
+}
