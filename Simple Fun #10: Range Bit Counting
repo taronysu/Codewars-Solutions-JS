@@ -1,0 +1,7 @@
+function rangeBitCount(a, b) {
+let res = 0;
+  for(let i = a; i <= b; i++){
+    res += i.toString(2).replace(/0/g,'').length;
+  }  
+  return res;
+} 
