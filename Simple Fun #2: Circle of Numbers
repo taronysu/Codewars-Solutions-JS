@@ -1,0 +1,3 @@
+https://www.codewars.com/kata/58841cb52a077503c4000015/train/javascript
+
+ let circleOfNumbers = (n, fn) => (fn + n/2) % n
