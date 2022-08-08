@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/62a933d6d6deb7001093de16/train/javascript
+
+function getTheVowels(word) {
+  let vowels = 'aeiou';
+  let vIndex = 0;
+  let res = 0;
+  for(let i = 0; i< word.length; i++) {
+    if (word[i] === vowels[vIndex]) { res ++;
+    if (vIndex === 4)  vIndex = 0
+    else vIndex ++;
+      }
+    }
+  return res;
+}
