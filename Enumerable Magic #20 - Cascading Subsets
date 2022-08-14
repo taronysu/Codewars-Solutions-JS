@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/545af3d185166a3dec001190/train/javascript
+
+function eachCons(arr, n) {
+  let res = []
+  for(let i = 0; i <= arr.length - n; i++) {
+    let parts = []
+   for (let j = i; j < i + n; j++) {
+     parts.push(arr[j])
+   }
+    res.push(parts)
+  }
+  return res
+}
