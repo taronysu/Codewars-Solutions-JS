@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5ace2d9f307eb29430000092/train/javascript
+
+function modifyMultiply (str,loc,num) {
+ let res = []
+ str = str.split(' ')
+  for(let i = 0; i <num; i++) {
+    res.push(str[loc])
+  }
+  return res.join('-')
+} 
