@@ -1,0 +1,3 @@
+https://www.codewars.com/kata/551204b7509063d9ba000b45/train/javascript
+
+const  mainDiagonalProduct = (m) => m.reduce((a,curr,i)=> a * curr[i],1)
