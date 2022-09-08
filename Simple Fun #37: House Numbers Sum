@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/58880c6e79a0a3e459000004/train/javascript
+
+function houseNumbersSum(arr) {
+  let zero = arr.indexOf(0);
+  let res = arr.slice(0,zero)
+  return res.reduce((s,el)=>s+el,0)  
+}
