@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/552ab0a4db0236ff1a00017a/train/javascript
+
+function sillycase(silly) {
+  let l = silly.length;
+  if (l % 2 == 0) {
+    return silly.slice(0,l/2).toLowerCase() + silly.slice(l/2,).toUpperCase()
+  }
+  return silly.slice(0,Math.ceil(l/2)).toLowerCase() + silly.slice(Math.ceil(l/2,)).toUpperCase()
+}
