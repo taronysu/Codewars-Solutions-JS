@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/56c19316e8b139dff60006da/train/javascript
+
+String.prototype.capitalize = function() {
+  let a = this.charCodeAt();
+  if(97 <= a && a <= 122) {
+    a -= 32
+  }
+  return String.fromCharCode(a) + this.slice(1)
+}
