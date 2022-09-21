@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/52449b062fb80683ec000024/train/javascript
+
+function generateHashtag(s) {
+ if (s.trim() == '') return false;
+  const camel = s.split(' ')
+  .map(word => word.charAt(0).toUpperCase() + word.slice(1)).join('');
+  const res = `#${camel.trim()}`;
+  return res.length > 140 ? false : res;
+  }
