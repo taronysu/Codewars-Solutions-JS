@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/59a9919107157a45220000e1/train/javascript
+
+const findAll = (array, n) => {
+  let res = []
+  for(let i = 0; i < array.length; i++) {
+    if(array[i] == n) {
+      res.push(i)
+    }
+  }
+  return res;
+}
