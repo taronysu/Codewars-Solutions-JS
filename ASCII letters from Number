@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/589ebcb9926baae92e000001/train/javascript
+
+function convert(number){
+ let res=[];
+  for (let i=0;i<number.length;i+=2){
+      res.push(number.slice(i,i+2));
+    }
+  return String.fromCharCode(...res);
+}
