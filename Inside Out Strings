@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/57ebdf1c2d45a0ecd7002cd5/train/javascript
+
+function insideOut(x){
+   return x.split(' ').map(l=>{
+    if (l.length <= 3) return l;
+    let front = l.slice(0,l.length/2).split('').reverse().join('')
+    let end = l.slice(l.length/2).split('').reverse().join('')
+    let c = ''
+    if (l.length %2 != 0){
+      end = l.slice(l.length/2+1).split('').reverse().join('')
+      c = l.slice(l.length/2,l.length/2+1)
+    }
+    return front + c + end
+  }).join(' ')
+}
