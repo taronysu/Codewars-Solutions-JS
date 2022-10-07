@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/59fb4d89ff58e5e816002efc/train/javascript
+
+function makesTheSentence(ch, se) {
+  return ch.sort().join('') === se.split(' ').join('').split('').sort().join('');
+}
