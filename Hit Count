@@ -1,0 +1,22 @@
+https://www.codewars.com/kata/57b6f850a6fdc76523001162/train/javascript
+
+function counterEffect(hitCount) {
+let arr = hitCount.split('')
+let a = [];
+let b = [];
+let c = [];
+let d = [];
+for(let i = 0; i <= arr[0]; i++){
+  a.push(i)
+  }
+for(let i = 0; i<= arr[1]; i++){
+  b.push(i)
+}
+for(let i = 0; i <= arr[2]; i++){
+  c.push(i)
+}
+for(let i = 0; i<= arr[3]; i++){
+  d.push(i)
+}
+return [a,b,c,d]
+}
