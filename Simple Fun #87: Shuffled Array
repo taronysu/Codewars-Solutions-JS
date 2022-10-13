@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/589573e3f0902e8919000109/train/javascript
+
+function shuffledArray(shuffled) {
+let target = shuffled.reduce((a,b)=>a+b,0)/2,
+      r = shuffled.slice(),
+      idxex = r.indexOf(target);
+  r.splice(idxex,1);
+  return r.sort((a,b)=>a-b);
+}
