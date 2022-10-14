@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/633bbba75882f6004f9dae4c/train/javascript
+
+function countLoopIterations(arr){
+  let res = [],
+      p = 1;
+  for(let [num,bool] of arr) {
+    let count = num + 1 + bool;
+    res.push(count * p);
+    p *= count -1;
+  }
+  return res;
+}
