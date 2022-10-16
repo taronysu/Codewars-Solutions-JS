@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5900750cb7c6172207000054/train/javascript
+
+function stickyCalc (op, val1, val2){
+    val1 = Math.round(val1)
+    val2 = Math.round(val2)
+    let val3 = parseInt(val1+'' + val2+'');
+    if(op == "+") {
+      return val3 + val2;
+      } else if(op == '-')  { return val3 - val2;
+        } else if(op == "*") { return val3 * val2;
+            }
+    return Math.round(val3 / val2);
+    }
