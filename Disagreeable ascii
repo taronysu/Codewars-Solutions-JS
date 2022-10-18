@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/582cb3a637c5583f2200005d/train/javascript
+
+function getWeight(name){
+  let s = []
+  let letters = name.replace(/[^a-zA-Z]/gi,'');
+   for (let el of letters) {
+     if (el == el.toUpperCase()) {
+         s.push(el.toLowerCase())
+    }
+     if (el == el.toLowerCase()){
+         s.push(el.toUpperCase())
+       }
+   }
+  return s.map((el)=>el.charCodeAt(0)).reduce((a,b)=>a+b,0)
+}
