@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5732d3c9791aafb0e4001236/train/javascript
+
+function roundIt(n){
+  let s = String(n).split(".");
+  if (s[0].length > s[1].length) {
+     return Math.floor(n);
+  } else if (s[0].length < s[1].length) {
+    return Math.ceil(n);
+    } else {
+    return Math.round(n);
+    }
+}
