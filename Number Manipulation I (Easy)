@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5890579a34a7d44f3b00009e/train/javascript
+
+function manipulate(n) { 
+  n = n + '';
+  let middle = n.length / 2;
+  return +(n.slice(0,middle) + '0'.repeat((n.slice(middle,)).length))
+} 
