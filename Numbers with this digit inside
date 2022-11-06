@@ -1,0 +1,29 @@
+https://www.codewars.com/kata/57ad85bb7cb1f3ae7c000039/train/javascript
+
+function isDigit(i,d) {
+  while(i) {
+    if(i%10===d) {
+      return true;
+    }
+    i = i / 10 | false;
+  }
+}
+
+function numbersWithDigitInside(x, d) {
+  let count = 0 
+  let s = 0
+  let product = 1
+  for(let i = 0; i <= x; i ++) {
+    if(isDigit(i,d)) {
+      count += 1
+      s += i
+      product *= i
+    }
+  }
+  if(count > 0) {
+    product
+  } else {
+    product = 0
+  }
+  return [count,s,product];
+}
