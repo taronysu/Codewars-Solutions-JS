@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5464cbfb1e0c08e9b3000b3e/train/javascript
+
+function isHappy(n) {
+  for (let i = 0; i < 10; i++){
+    n = n.toString().split('').reduce((a,b)=> a + (b * b), 0);
+  }
+  return n == 1;
+}
