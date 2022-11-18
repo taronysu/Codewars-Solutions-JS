@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/554910d77a3582bbe300009c/train/javascript
+
+function getWinner(ballots) {
+  let w = ballots.length / 2
+  let obj= {};
+  ballots.map(v => obj[v] = obj[v] ? obj[v] + 1 : 1)
+  for (let el in obj){
+  if (obj[el]>w) return el
+  }
+  return null;
+}
