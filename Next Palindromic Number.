@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/56a6ce697c05fb4667000029/train/javascript
+
+  function palindrom(n) {
+  return n.toString() === n.toString().split('').reverse().join('')
+  }
+
+function nextPal(val) {
+    let p=0;
+    for (let i = val + 1; ; i++) {
+      if ( palindrom(i)) { 
+      p = i;
+        break;
+    } 
+      }
+    return p ;
+    }
