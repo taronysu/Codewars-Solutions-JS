@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5d774cfde98179002a7cb3c8/train/javascript
+
+function makeClass(...properties) {
+ return function(...v) {
+    properties.forEach((el, i) => this[el] = v[i]);
+  }
+}
