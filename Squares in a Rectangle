@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5a62da60d39ec5d947000093/train/javascript
+
+function findSquares(m,n){
+  let s = 0;
+  while(m >0 && n > 0){
+    s += m * n;
+    m--;
+    n--;
+    }
+  return s;
+}
