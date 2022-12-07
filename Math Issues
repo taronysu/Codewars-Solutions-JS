@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5267faf57526ea542e0007fb/train/javascript
+
+Math.round = function(n) {
+  return (n - parseInt(n) >= 0.5) ? parseInt(n) + 1 : parseInt(n) ;
+};
+
+Math.ceil = function(n) {
+  return (parseInt(n) === n) ? n : parseInt(n) + 1;
+};
+
+Math.floor = function(n) {
+  return parseInt(n);
+};
