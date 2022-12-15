@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5ce969ab07d4b7002dcaa7a1/train/javascript
+
+function solve(s){  
+     for (let i = Math.floor(s.length / 2); i > 0; i--) {
+        let prefix = s.slice(0, i);
+        let suffix = s.slice(-i);
+        if (prefix == suffix) {
+            return i;
+        }
+    }
+    return 0;
+}
