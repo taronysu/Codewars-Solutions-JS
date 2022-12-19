@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/57a60bad72292d3e93000a5a/train/javascript
+
+function toAcronym(inp){
+  let res = '';
+  inp = inp.split(' ');
+  for(let el of inp) {
+    res += el[0].toUpperCase()
+  }
+  return res;
+}
