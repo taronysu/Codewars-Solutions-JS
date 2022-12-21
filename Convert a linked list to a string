@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/582c297e56373f0426000098/train/javascript
+
+function stringify(list) {
+ let d = [];
+  while (list !== null) {
+    d.push(list.data);
+    list = list.next;
+  }
+  d.push('null');
+  return d.join(' -> ');
+}
