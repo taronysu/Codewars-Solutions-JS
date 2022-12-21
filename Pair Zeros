@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/54e2213f13d73eb9de0006d2/train/javascript
+
+function pairZeros(arr) {
+  let zeros = 0;
+  return arr.map(v=>{ if (v == 0) {
+  if (v == 0) { zeros ++ };
+  if (v == 0 && zeros % 2 == 0) return v=null
+  }
+  return v
+  }).filter(v=>v!==null);
+}
