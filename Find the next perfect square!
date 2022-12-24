@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/56269eb78ad2e4ced1000013/train/javascript
+
+function findNextSquare(sq) {
+let a = Math.sqrt(sq);
+let b = 0;
+  if (a%1!==0) { return -1 }
+ b = Math.pow(a+1,2);
+  return b;
+}
