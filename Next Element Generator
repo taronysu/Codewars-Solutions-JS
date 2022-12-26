@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/61fab7a6a0e59f000ef08feb/train/javascript
+
+function* nextElementGenerator(array) {
+  while(true) {
+    yield* array
+  }
+}
