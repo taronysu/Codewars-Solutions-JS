@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5a05c404697598b477000072/train/javascript
+
+function findMaxProduct(arr){
+    let pr = 1;
+    let res = [];
+    for(let i = 0; i < arr.length; i ++) {
+          for(let j = i; j < arr.length; j += i+ 1) {
+               pr *= arr[j]
+          }
+      res.push(pr)
+      pr = 1
+   }
+  return Math.max(...res)
+  }
