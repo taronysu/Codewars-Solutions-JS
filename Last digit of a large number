@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5511b2f550906349a70004e1/train/javascript
+
+var lastDigit = function(str1, str2){  
+  return +!+str2 || Math.pow(str1.slice(-1), str2.slice(-2) % 4 || 4) %10;
+}
