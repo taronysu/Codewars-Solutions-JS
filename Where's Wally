@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/55f91a98db47502cfc00001b/train/javascript
+
+function wheresWally(s){
+  return (" " + s).search(/ Wally\b/); 
+}
