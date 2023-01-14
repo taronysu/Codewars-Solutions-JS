@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5541f58a944b85ce6d00006a/train/javascript
+
+function productFib(prod){
+  let a = 0;
+  let b = 1;  
+  while(a * b < prod) {
+    b = a + b;
+    a = b - a;
+  }
+  return [a, b, a*b === prod];
+}
