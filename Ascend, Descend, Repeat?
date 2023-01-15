@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/62ca07aaedc75c88fb95ee2f/train/javascript
+
+function ascendDescend(length, minimum, maximum) {
+  let res = "";
+  for(let i = minimum; i <= maximum; i++) {
+    res += i;
+  }
+  for(let i = maximum - 1; i > minimum; i--) {
+    res += i;
+  }
+  res = res.repeat(length)
+  return res.slice(0,length)
+}
