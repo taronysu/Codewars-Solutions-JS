@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/56fcc1ee45040039ab0016da/train/javascript
+
+class Cube {
+  constructor(l) {
+    this.length = l;
+  }
+  get surfaceArea() {
+    return this.length * this.length * 6;
+  }
+  get volume() {
+    return this.length ** 3;
+  }
+  set surfaceArea(a) {
+    this.length = Math.sqrt(a / 6);
+  }
+  set volume(v) {
+    this.length = Math.pow(v, 1 / 3);
+  }
+}
