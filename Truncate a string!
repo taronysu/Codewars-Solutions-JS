@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/57af26297f75b57d1f000225/train/javascript
+
+function truncateString(str, n) {
+ if (str.length <= n) {
+        return str
+   }
+    if (n <= 3) {
+        return str.slice(0,n) + "..."
+      }
+    else {
+        return str.slice(0,n-3) + "..."
+      }
+  return str
+}
