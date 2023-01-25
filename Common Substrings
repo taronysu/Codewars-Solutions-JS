@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5669a5113c8ebf16ed00004c/train/javascript
+
+function SubstringTest(str1, str2)
+{
+  let s1 = [];
+  let s2 = [];
+  for (let i = 0; i < str1.length-1; i++) {
+  s1.push(str1.toLowerCase().slice(i,i+2))
+  }
+  for (let i = 0; i < str2.length-1; i++) {
+  s2.push(str2.toLowerCase().slice(i,i+2))
+  }
+  return s1.filter(l=>s2.includes(l)).length > 0
+}
