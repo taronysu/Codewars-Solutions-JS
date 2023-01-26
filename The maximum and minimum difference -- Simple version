@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/583c5469977933319f000403/train/javascript
+
+function maxAndMin(array1,array2){
+ const a = Math.max(...array1.map(n => Math.max(...array2.map(m => Math.abs(n - m)))));
+ const b = Math.min(...array1.map(n => Math.min(...array2.map(m => Math.abs(n - m)))));
+     return [a,b];
+}
