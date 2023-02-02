@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/58e3e62f20617b6d7700120a/train/javascript
+
+function trianglePerimeter(t){
+    return Math.hypot(t.a.x - t.b.x, t.a.y - t.b.y) +
+           Math.hypot(t.a.x - t.c.x, t.a.y - t.c.y) +
+           Math.hypot(t.b.x - t.c.x, t.b.y - t.c.y);
+}
