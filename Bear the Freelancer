@@ -1,0 +1,21 @@
+https://www.codewars.com/kata/58d5b39b1c0402c5f7002e0d/train/javascript
+
+function bearDollars(arr) {
+  let res = 0;
+  for (i=0; i<arr.length; i++) {
+    let t = arr[i][1].toLowerCase();
+    if(t == 'close friend') {
+        res += arr[i][0] * 25;
+      }
+    else if(t == 'friend') {
+        res += arr[i][0] * 50;
+      }
+   else if(t == 'acquaintance') {
+        res += arr[i][0] * 100;
+     }
+    else {
+        res += arr[i][0] * 125;
+      }
+  }
+  return res;
+}
