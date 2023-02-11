@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5884b6550785f7c58f000047/train/javascript
+
+function group(arr) {
+ var result = [];
+  while(arr.length > 0)
+  {
+    result.push(arr.filter(a => a == arr[0]));
+    arr = arr.filter(a => a != arr[0]);    
+  }
+   return result;
+}
