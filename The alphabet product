@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/63b06ea0c9e1ce000f1e2407/train/javascript
+
+function alphabet(ns) {
+ sortirovka = ns.sort((a,b)=>a-b);
+    if (sortirovka[0] * sortirovka[1] == sortirovka[2]) {
+        return sortirovka[7] / sortirovka[3]
+      }
+    return sortirovka[7] / sortirovka[2]
+}
