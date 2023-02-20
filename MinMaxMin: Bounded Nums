@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/58d3487a643a3f6aa20000ff/train/javascript
+
+function minMinMax(arr) {
+ let a= Math.min(...arr)
+ let b = Math.max(...arr)
+ let c = a + 1
+    while(arr.includes(c)) {
+        c += 1
+      }
+    return [a, c, b]
+}
