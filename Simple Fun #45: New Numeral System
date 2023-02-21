@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5888445107a0d57711000032/train/javascript
+
+function newNumeralSystem(number) {
+  let res =[];
+  for (let i='A'.charCodeAt(); i <=number.charCodeAt(); i++){
+    res.push(String.fromCharCode(i));
+  }
+  return res.map((el,i)=>`${el} + ${res[res.length-1-i]}`)
+    .slice(0,Math.round(res.length/2));
+}
