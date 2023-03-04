@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5a005f4fba2a14897f000086/train/javascript
+
+function sumItUp(arr){
+ let s = 0;
+    for(let el of arr) {
+        s += parseInt(el[0],el[1])
+    }
+  return s;
+  }
