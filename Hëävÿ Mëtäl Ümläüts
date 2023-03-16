@@ -1,0 +1,27 @@
+https://www.codewars.com/kata/57d4e99bec16701a67000033/train/javascript
+
+function heavyMetalUmlauts(b) {
+  const letters = {
+    A:'Ä',
+    O:'Ö',
+    a:'ä',
+    o:'ö',
+    E:'Ë',
+    U:'Ü',
+    e:'ë',
+    u:'ü',
+    I:'Ï',
+    Y:'Ÿ',
+    i:'ï',
+    y:'ÿ',
+  }
+  let res = ''
+  for(let i = 0; i < b.length; i ++) {
+    if(letters[b[i]]) {
+      res += letters[b[i]]
+    } else {
+      res += b[i]
+      }
+    }
+    return res;
+  }
