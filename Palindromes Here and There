@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/5838a66eaed8c259df000003/train/javascript
+
+const rev = s => String(s).split("").reverse().join("");
+
+function convertPalindromes(n) {
+  let res = []
+for(let el of n) {
+  if (el+'' === rev(el)) {
+    res.push(1)
+  }
+  else {
+    res.push(0)
+  }
+}
+  return res
+}
