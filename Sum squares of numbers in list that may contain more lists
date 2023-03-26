@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/57882daf90b2f375280000ad/train/javascript
+
+function SumSquares(l){
+  let flat = l.toString().split(',');
+  return flat.map((l)=>l ** 2).reduce((a,b)=>a + b, 0);
+}
