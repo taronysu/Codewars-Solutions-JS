@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5512e5662b34d88e44000060/train/javascript
+
+function findMissingNumber(sequence){
+  if(sequence == "") return 0;
+  sequence = sequence.split(" ").map(x => +x);
+    for(let i = 1; i <= sequence.length; i++){
+    if(i !== sequence[i-1]) {
+      return i;
+      }
+    }
+  return 0;
+}
