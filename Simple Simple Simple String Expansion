@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/5ae326342f8cbc72220000d2/train/javascript
+
+function stringExpansion(s) {
+ let res="";
+  let  n=1;
+  for (var i=0; i<s.length; i++)
+  {
+    if (s[i]>="0" && s[i]<="9")
+      n=+s[i]
+    else
+      for (var j=0; j<n; j++)
+        res += s[i];
+  }
+  return res;
+}
