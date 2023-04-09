@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/56fa93d36883c783ec0001d1/train/javascript
+
+ const print = console.log;
+ console.log = (l) => {
+  this.answer = l;
+  print(l)
+}
