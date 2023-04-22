@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5ce04eadd103f4001edd8986/train/javascript
+
+function solution(n, b) {
+  let res  = []
+  for(let i = 0; i <2**n; i++) {
+    if(i & b) {
+      res.push(i)
+    }
+  }
+  return res
+  }
