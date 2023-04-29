@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/63ebadc7879f2500315fa07e/train/javascript
+
+function cleanedCounts(data, n = -1) {
+  return data.map(el => n = Math.max(el,n))
+}
