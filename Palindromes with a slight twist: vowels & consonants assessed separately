@@ -1,0 +1,26 @@
+https://www.codewars.com/kata/5a1560c980171f3f68000037/train/javascript
+
+function p(line) {
+  if(line) {
+  return String(line) === String(line).split('').reverse().join('')
+    }
+  return null
+}
+
+function palindrome(str) {
+  str = str.toLowerCase()
+  str = str.replace(/[0-9]/g,'')
+   str = str.replace(/[^A-Za-z]/gi,'')
+  let vowels = str.match(/[aeiou]/ig).join("");
+  let rr = str.match(/[^aeiou]/ig).join("");
+  if(p(vowels) && p(rr)) {
+    return 'both'
+  }
+  if(p(vowels) && !p(rr)) {
+    return 'vowel'
+  } 
+  if(!p(vowels) && p(rr)) {
+    return 'consonant'
+  }
+  return 'neither'
+}
