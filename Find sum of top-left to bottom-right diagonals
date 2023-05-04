@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5497a3c181dd7291ce000700/train/javascript
+
+function diagonalSum(matrix){
+    return matrix.reduce((acc,cur,i) => acc + cur[i], 0)
+}
