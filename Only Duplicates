@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/5a1dc4baffe75f270200006b/train/javascript
+
+function onlyDuplicates(s) {
+  let char_count = {}
+        for (let char of s) {
+        if (char in char_count)
+          { char_count[char] += 1
+           }
+        else {
+            char_count[char] = 1
+          }
+  }
+    let  output_str = ""
+    for (let char of s)
+        if (char_count[char] > 1)
+            output_str += char
+        return output_str
+}
