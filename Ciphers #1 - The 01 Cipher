@@ -1,0 +1,20 @@
+https://www.codewars.com/kata/593f50f343030bd35e0000c6/train/javascript
+
+function encode(s){
+ let alphabet="abcdefghijklmnopqrstuvwxyz"
+   let v = ""
+    for(let  i of s.toLowerCase()) {
+        if (alphabet.includes(i)) {
+            if (alphabet.indexOf(i)%2!=0)
+               { v+="1"
+                }
+            else  {
+                v+="0"
+              }
+          }
+        else {
+            v+=i
+      }
+      }
+    return v
+    }
