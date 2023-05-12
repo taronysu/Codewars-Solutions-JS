@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/544047f0cf362503e000036e/train/javascript
+
+function findBall(scales) {
+    for (let i = 1; i < 8; i++) {
+        let leftPan = [i - 1];
+        let rightPan = [8 - i];
+        let w = scales.getWeight(leftPan, rightPan);
+
+        if (w === -1) {
+            return leftPan[0];
+        }
+
+        if (w === 1) {
+            return rightPan[0];
+        }
+    }
+}
