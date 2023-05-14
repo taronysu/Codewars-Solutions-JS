@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/559576d984d6962f8c00003c/train/javascript
+
+function arr2bin(arr){
+ if(arr.filter(l => typeof l != 'number').length > 0) 
+     return false
+  return arr.reduce((a,b) => a + b, 0).toString(2)
+}
