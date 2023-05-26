@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5881460c780e0dd207000084/train/javascript
+
+function spot(s1,s2){
+  const res = [];
+  s1.split('').map((el,i) => el != s2[i] ? res.push(i): el)
+  return res;
+}
