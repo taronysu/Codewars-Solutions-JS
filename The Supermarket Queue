@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57b06f90e298a7b53d000a86/train/javascript
+
+function queueTime(customers, n) {
+ let arr = new Array(n).fill(0);
+  for (let c of customers) {
+    let i = arr.indexOf(Math.min(...arr));
+    arr[i] += c;
+    
+  }
+  return Math.max(...arr);
+}
