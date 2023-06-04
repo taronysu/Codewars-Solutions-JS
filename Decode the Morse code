@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/54b724efac3d5402db00065e/train/javascript
+
+decodeMorse = function(morseCode){
+    const wordsMap = morseCode.split(' '.repeat(3)).map(words => words.split(' '));
+  const decodeChars = char => MORSE_CODE[char];
+  const decodeWords = words => words.map(decodeChars).join('');
+  const decodedString = wordsMap.map(decodeWords).join(' ').trim();
+  
+  return decodedString;
+}
