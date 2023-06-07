@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57ed7214f670e99f7a000c73/train/javascript
+
+function skiJump(mountain){
+  const height = mountain.length;
+  const speed = height * 1.5;
+  const len = ((height * speed * 9) / 10).toFixed(2);
+  if (len < 10) return `${len} metres: He's crap!`
+  if (len < 25) return `${len} metres: He's ok!`
+  if (len < 50) return `${len} metres: He's flying!`
+  return `${len} metres: Gold!!`
+}
