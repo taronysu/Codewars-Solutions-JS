@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/556025c8710009fc2d000011/train/javascript
+
+function GrεεκL33t(str){
+ let d = {a:'α',b:'β',d:'δ',e:'ε',i:'ι',k:'κ',n:'η',o:'θ',p:'ρ',r:'π',t:'τ',u:'μ',
+  v:'υ',w:'ω',x:'χ',y:'γ'}
+  return str.replace(/./g,l => {
+    if (d[l.toLowerCase()]){
+      return l == l.toUpperCase() ? d[l.toLowerCase()]:d[l];
+    }
+    return l.toLowerCase();
+  })
+}
