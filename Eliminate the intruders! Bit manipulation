@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5a0d38c9697598b67a000041/train/javascript
+
+function eliminateUnsetBits(n) {
+  let s = ''
+  for (let el of n) {
+    if (el==='1') {
+      s += el;
+    }
+  }
+  return  parseInt(s,2) || 0;
+}
