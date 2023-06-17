@@ -1,0 +1,3 @@
+https://www.codewars.com/kata/5b3f8ac282417eb3180000e6/train/javascript
+
+const isJubilee = year => new Date(year, 6, 25).getDay() == 0
