@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5adadcb36edb07df5600092e/train/javascript
+
+function solve(...a) {
+  return Math.min(...a) * 7 + a.reduce((acc,curr) => acc + curr ** 2,0)
+}
