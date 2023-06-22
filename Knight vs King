@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/564e1d90c41a8423230000bc/train/javascript
+
+function knightVsKing(R, K) {
+    let x = R[0] - K[0]
+    let y = R[1].charCodeAt() - K[1].charCodeAt()
+    let d = x * x + y * y
+    if (d === 5)
+        return 'Knight'
+    if (d < 3)
+        return 'King'
+    return 'None'
+}
