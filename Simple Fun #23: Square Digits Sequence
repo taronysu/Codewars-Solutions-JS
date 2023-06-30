@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5886d65e427c27afeb0000c1/train/javascript
+
+function squareDigitsSequence(a) {
+let nums = new Set();
+  while (!nums.has(a)) {
+    nums.add(a);
+    a = +[...String(a)].reduce((s, n) => s + n * n, 0);
+  }
+  return nums.size + 1;  
+  }
