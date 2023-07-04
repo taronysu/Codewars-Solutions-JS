@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/565f1bd8f97d3e59c400014a/train/javascript
+
+function binaryFingers(bs) {
+  let fingers = ['Pinkie','Ring','Middle','Index','Thumb'];
+  let a = '0'.repeat(5 - bs.length) + bs;
+  let res = [];
+  a.split(``).map((el,i) => el == '1' ? res.push(fingers[i]) : el)
+  return res
+}
