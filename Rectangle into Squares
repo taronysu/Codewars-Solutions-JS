@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/55466989aeecab5aac00003e/train/javascript
+
+function sqInRect(lng, wdth){
+ let res = [];
+  if(lng === wdth) {
+    return null;
+    }
+  while(lng > 0 && wdth > 0) {
+    res.push(lng > wdth ? wdth : lng)
+    lng > wdth ? lng -= wdth : wdth -= lng
+  }
+  return res;
+}
