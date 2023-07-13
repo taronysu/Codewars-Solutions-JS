@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/53907ac3cd51b69f790006c5/train/javascript
+
+/* Should return ᐃ type:
+  0 : if ᐃ cannot be made with given sides
+  1 : acute ᐃ
+  2 : right ᐃ
+  3 : obtuse ᐃ
+*/
+function triangleType(a, b, c){
+  let m = Math.max(a,b,c);
+  let l = a*a+b*b+c*c
+  if (a+b+c <= 2 * m) return 0;
+  if (2 * m * m == l) return 2;
+  if (2 * m * m > l) return 3;
+  return 1;
+  return 0;
+}
