@@ -1,0 +1,3 @@
+https://www.codewars.com/kata/588453ea56daa4af920000ca/train/javascript
+
+const arrayPacking = a => a.reduceRight((a,b) => a * 256 + b)
