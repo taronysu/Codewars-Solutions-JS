@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/5279f6fe5ab7f447890006a7/train/javascript
+
+function pickPeaks(arr){
+  let r = { pos: [], peaks: [] };
+  for (let i = 1; i < arr.length; i++) {
+    var p;
+    if (arr[i] > arr[i - 1]){
+      p = i;
+    } else if (arr[i] < arr[i - 1] && p){
+      r.pos.push(p);
+      r.peaks.push(arr[p]);
+      p = undefined;
+    }
+  }
+  return r;
+}
