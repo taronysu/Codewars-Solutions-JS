@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/51e04f6b544cf3f6550000c1/train/javascript
+
+var beeramid = function(bonus, price) {
+  let i = 0;
+    while (bonus > 0) {
+        i += 1;
+        bonus -= price * (i**2);
+        if (bonus < 0) i -= 1;
+      }
+    return i;
+  }
