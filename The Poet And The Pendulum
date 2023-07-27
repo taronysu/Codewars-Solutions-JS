@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5bd776533a7e2720c40000e5/train/javascript
+
+function pendulum(values) {
+  let x = [], y = [];
+  const sorted = values.sort((a, b) => a - b).map((v, i) => (i % 2 == 0 ? x : y).push(v));
+  return x.reverse().concat(y);
+}
