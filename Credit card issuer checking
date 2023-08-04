@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/5701e43f86306a615c001868/train/javascript
+
+function getIssuer(number) {
+let n = number.toString();
+let a = n.substr(0, 2);
+let b = n.substr(0, 4);
+let c = n.substr(0, 1);
+if ((a == '34' || a == '37') && n.length == 15) {
+  return 'AMEX';
+}
+else if (a >= '51' && a <= '55'&& n.length == 16){
+  return 'Mastercard';
+}
+else if (b == '6011'&& n.length == 16){
+  return 'Discover';
+}
+else if (c == '4' && (n.length == 13 || n.length == 16) ){
+  return 'VISA';
+}
+else {
+ return 'Unknown';
+}
+}
