@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5a34c307f28b829b3d000045/train/javascript
+
+function twentyOne(...c) {
+  let deck = ['2','3','4','5','6','7','8','9','1','A']
+  let face = ['J','Q','K']
+  let sum = c.map(v=>deck.indexOf(v.slice(0,1))>-1?deck.indexOf(v.slice(0,1))+2:face.indexOf(v.slice(0,1))+2).reduce((a,b)=>a+b,0)
+  return sum == 21 ? 'twenty-one' : sum < 21 ? 'less' : 'more'
+  }
