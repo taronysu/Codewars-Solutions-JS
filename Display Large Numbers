@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/57f318ce828b3553b40013ea/train/javascript
+
+function displayLargeNumber(n) {
+  let arr = [];
+  let str=n.toString().split('').reverse().join('')
+  for (let i=0;i<str.length;i+=3){
+    arr.push(str.slice(i,i+3))
+  }
+  return arr.map(v=>v.split('').reverse().join('')).reverse().join(',')
+}
