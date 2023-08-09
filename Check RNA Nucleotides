@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5a3325b4b6486ab367000064/train/javascript
+
+function checkNucleotides(s) {
+  for (let i=0;i<s.length;i++){
+    if (!/[AGCU]/.test(s[i])) return `There is an invalid letter: ${s[i]}. At position: ${i+1}`
+  }
+  return `Valid Sequence: ${s}`
+}
