@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/602db3215c22df000e8544f0/train/javascript
+
+function twoArePositive(a, b, c) {
+   let nums = [a,b,c];
+   let res = 0;
+    for(let n of nums) {
+        if (n > 0) {
+            res += 1;
+        }
+      }
+    return res == 2;
+}
