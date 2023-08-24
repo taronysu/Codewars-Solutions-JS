@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/578c1e2edaa01a9a02000b7f/train/javascript
+
+function aliasGen(f_name,l_name){
+   if(f_name[0].toUpperCase() in firstName && l_name[0].toUpperCase() in surname) { 
+        x = firstName[f_name[0].toUpperCase()]
+        y = surname[l_name[0].toUpperCase()]
+        return x +" "+ y
+     }
+    
+    else 
+        return 'Your name must start with a letter from A - Z.'
+  }
