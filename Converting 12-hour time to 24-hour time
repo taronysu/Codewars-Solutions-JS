@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/59b0a6da44a4b7080300008a/train/javascript
+
+function to24hourtime(hour, minute, p) {
+  if(hour == 12 && p == 'am') {
+    hour = 0;
+  }
+  else if(p == 'pm' && hour < 12) {
+    hour += 12;
+  }
+  if(hour < 10) {
+    hour = '0' + hour;
+  }
+  if(minute < 10) {
+    minute = '0' + minute
+  }
+  return "" + hour + minute;
+}
