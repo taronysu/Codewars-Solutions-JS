@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/54dc6f5a224c26032800005c/train/javascript
+
+function stockList(listOfArt, listOfCat){
+  if(listOfArt.length == 0 || listOfCat.length == 0) return ''
+  const arr = [];
+  let l = '';
+  let n = 0;
+  for (let i=0;i<listOfCat.length;i++){
+  l = listOfCat[i];
+  n = 0;
+  for (let j=0;j<listOfArt.length;j++){
+  if (listOfArt[j][0]  == listOfCat[i]) {
+    n += listOfArt[j].match(/[\d]+/g)*1}
+  }
+  let str=`(${l} : ${n})`
+  arr.push(str)
+  }
+  return arr.join(' - ')
+}
