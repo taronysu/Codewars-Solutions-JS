@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/56f54d45af5b1fec4b000cce/train/javascript
+
+const isValidHKPhoneNumber = s => {
+  return /^\d{4}\s\d{4}$/.test(s)
+}
+const hasValidHKPhoneNumber = s=> {
+   return /\d{4}\s\d{4}/.test(s)
+}
