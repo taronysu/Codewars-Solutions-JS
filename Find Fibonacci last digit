@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/56b7251b81290caf76000978/train/javascript
+
+function getLastDigit(n) {
+    let first = 0;
+    let second = 1;
+    let res;
+    for (let i = 2; i <= n; i++) {
+        res = (first + second) % 10;
+        first = second;
+        second = res;
+    }
+
+    return res;
+}
