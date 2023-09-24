@@ -1,0 +1,22 @@
+https://www.codewars.com/kata/5264d2b162488dc400000001/train/javascript
+
+unction spinWords(words){
+  //TODO Have fun :)
+   let result = [];
+  let arr = words.split(" ");
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > 4) {
+      let newStr = arr[i];
+      let newArr = newStr.split("");
+      let revArr = newArr.reverse();
+      let revJoin = revArr.join("");
+      result.push(revJoin);
+      } else {
+          let conStr = arr[i];
+          result.push(conStr);
+        }
+  }
+  let str = result.join(" ");
+  return str;
+  
+  }
