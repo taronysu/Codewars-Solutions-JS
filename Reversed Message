@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5a0efbb7c374cb69970000cf/train/javascript
+
+function reverseMessage(str) {
+  return str.toLowerCase().split('').reverse().join('').split(' ')
+  .map(x => x.charAt(0).toUpperCase() + x.slice(1)).join(' ')
+}
