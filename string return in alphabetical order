@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/59634e2aa0e7a8966c000a10/train/javascript
+
+function alphabetOrder(str) {
+  return [...str].sort().join('')
+}
