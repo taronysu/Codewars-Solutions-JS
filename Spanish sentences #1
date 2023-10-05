@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5a30ae82ee1aaef63300001a/train/javascript
+
+function spanishSent(arr) {
+    let count = 0;
+    arr.map(v => {
+  if (v[0] === '¿' && v[v.length-1] === '?') count++
+  if (v[0] ==='¡'&& v[v.length-1] === '!') count++
+  });
+  return `¡${count} spanish sentence${count === 1?'':'s'} here and hasta la vista, baby!`
+}
