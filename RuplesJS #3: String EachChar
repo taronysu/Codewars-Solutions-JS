@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/56808724e7784d220c00003f/train/javascript
+
+String.prototype.eachChar = function(r){
+    if (typeof r === 'string'){
+    return this.split('').map(v => v + r).join('')
+    }
+    return this.split('').map(v => r(v)).join('')
+  }
