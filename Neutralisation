@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/65128732b5aff40032a3d8f0/train/javascript
+
+function neutralise(a, b) {
+  let res = ''
+  for(let i = 0; i< a.length; i++) {
+    if(a[i] == "+" && b[i] == "+") {
+      res += '+'
+    }
+    if(a[i] == "+" && b[i] == "-") {
+      res += '0'
+    }
+    if(a[i] == "-" && b[i] == "+") {
+      res += '0'
+    }
+    if(a[i] == "-" && b[i] == "-") {
+      res += '-'
+    }
+  }
