@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/55466644b5d240d1d70000ba/train/javascript
+
+function candies(s){
+  if (s.length <= 1) return -1;
+  let candy = Math.max(...s)
+  return s.reduce((total, kid) => total + candy - kid, 0)       
+}
