@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/55c9fb1b407024afe6000055/train/javascript
+
+function findEmployeesRole(name) {
+   for(let i = 0; i < employees.length; i++)
+    if(name == employees[i].firstName + " " + employees[i].lastName) {
+      return employees[i].role;
+      }
+  return "Does not work here!";
+}
