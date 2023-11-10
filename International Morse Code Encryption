@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/55b8c0276a7930249e00003c/train/javascript
+
+function encryption(message) {
+  return [...message].map(l => CHAR_TO_MORSE[l] || l).join(' ')
+}
