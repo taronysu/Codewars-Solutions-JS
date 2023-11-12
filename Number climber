@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/559760bae64c31556c00006b/train/javascript
+
+function climb(n){
+ let s = [];
+  while (n >= 1) {
+    s.unshift(n);
+    n = Math.floor(n / 2);
+  }
+  return s;
+}
