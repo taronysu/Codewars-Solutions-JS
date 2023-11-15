@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/556e0fccc392c527f20000c5/train/javascript
+
+function Xbonacci(signature,n){
+let res = signature.slice(), sum;
+  for ( let i = 0; i < n-signature.length; i++ ) {
+    sum = 0;
+    for ( let j = i; j < i+signature.length; j++ ) {
+      sum += res[j]
+    }
+    res.push(sum)
+  }
+  return res.slice(0, n);
+}
