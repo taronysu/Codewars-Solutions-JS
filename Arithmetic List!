@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/541da001259d9ca85d000688/train/javascript
+
+var seqlist = function(first,c,l){
+  let res = []
+  for(let i = 0; i < l; i++) {
+    res.push(first + c * i)
+  }
+  return res
+}
