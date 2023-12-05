@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5bd00c99dbc73908bb00057a/train/javascript
+
+function alphaSeq (s) {
+  let sorted = s.toLowerCase().split('').sort();
+  let r = sorted.map(l => l.charCodeAt()-96);
+  console.log(r)
+  return sorted.map((l,i) => l.repeat(r[i]).slice(0,1).toUpperCase()+
+                           l.repeat(r[i]).slice(1)).join(',');
+}
