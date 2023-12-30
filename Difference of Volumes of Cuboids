@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/58cb43f4256836ed95000f97/train/javascript
+
+function findDifference(a, b) {
+  let sum1 = 1;
+    for (let  i = 0; i < a.length; i++) {
+        sum1 = sum1 * a[i]; 
+      }
+  let  sum2 = 1;
+    for (let i = 0; i < b.length; i++) {
+        sum2 = sum2 * b[i];
+      }
+  return Math.abs(sum2-sum1);
+}
