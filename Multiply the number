@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5708f682c69b48047b000e07/train/javascript
+
+function multiply(number){
+  let n = String(Math.abs(number)).length;
+  return number * 5 ** n;
+}
