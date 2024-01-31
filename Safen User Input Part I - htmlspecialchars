@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/56bcaedfcf6b7f2125001118/train/javascript
+
+function htmlspecialchars(formData) {
+  let html = [];
+  for (let i = 0; i < formData.length; i++){
+    if (formData[i] == '<'){
+      html.push('&lt;');
+      
+    } else if(formData[i] == '>'){
+      html.push('&gt;');
+      
+    } else if(formData[i] == '"'){
+      html.push('&quot;');
+      
+    } else if(formData[i] == '&'){
+      html.push('&amp;');
+      
+    } else {
+      html.push(formData[i]);
+    }
+  }
+return html.join('');
+}
