@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5b043e3886d0752685000009/train/javascript
+
+function michaelPays(costs) {
+  if (costs < 5) {
+    return parseFloat((costs).toFixed(2));
+    }
+  return costs / 3 > 10 ? parseFloat((costs-10).toFixed(2)) : parseFloat((costs / 3 + costs / 3).toFixed(2));
+}
