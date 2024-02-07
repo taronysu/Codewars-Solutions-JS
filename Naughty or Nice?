@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/585eaef9851516fcae00004d/train/javascript
+
+function whatListAmIOn(actions){
+  const bad=['b','f','k'];
+  const good=['g','s','n'];
+  let count = 0;
+  actions.map(l => bad.includes(l[0]) ? count-- : good.includes(l[0]) ? count++ : l);
+  return count > 0 ? 'nice' : 'naughty';
+ }
