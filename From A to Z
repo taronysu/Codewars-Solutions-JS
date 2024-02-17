@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/6512b3775bf8500baea77663/train/javascript
+
+def gimme_the_letters(s):
+    	return "".join(chr(n) for n in range(ord(s[0]),ord(s[-1])+1))
