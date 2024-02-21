@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/58af1bb7ac7e31b192000020/train/javascript
+
+function findSummands(n){
+   let res = [];
+   let y = n * n - n + 1
+    for (let i = 0; i < n; i++) {
+      res.push(y + 2 * i)
+    }
+    return res
+}
