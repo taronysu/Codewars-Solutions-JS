@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/526a569ca578d7e6e300034e/train/javascript
+
+function convert(input, source, target) {
+    let inn = source.length;
+    let out = target.length;
+    let acc = 0
+    let t = ''
+    for (let d = 0; d < input.length; d++) {
+        acc *= inn;
+        acc += source.indexOf(input[d]);
+      }
+    while (acc != 0) {
+        t = target[acc % out] + t;
+        acc = Math.floor(acc/out);
+      }
+    return t ? t : target[0];
+}
