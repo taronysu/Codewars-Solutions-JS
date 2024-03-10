@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5889a8b335de69cc620000c8/train/javascript
+
+function swapDiagonals(matrix) {
+ let reversed = matrix.map((row) => row.slice());
+  let n = matrix.length;
+  for (let i = 0; i < n; i++) {
+    reversed[i][i] = matrix[i][n - i - 1];
+    reversed[i][n - i - 1] = matrix[i][i];
+  }
+  return reversed;
+}
