@@ -1,0 +1,21 @@
+https://www.codewars.com/kata/58aa8698ae929e1c830001c7/train/javascript
+
+function findTheMissingTree(trees) {
+ let  res = {};
+    for (let i = 0; i < trees.length; i++) {
+        if (res[trees[i]] === undefined) {
+            res[trees[i]] = 1;
+        } else {
+            res[trees[i]] += 1;
+        }
+    }
+    let minCount = Infinity;
+    let missingTree;
+    for (let tree in res) {
+        if (res[tree] < minCount) {
+            minCount = res[tree];
+            missingTree = tree;
+        }
+    }
+    return +missingTree
+}
