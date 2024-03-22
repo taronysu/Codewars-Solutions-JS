@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/55e8aba23d399a59500000ce/train/javascript
+
+function Hero (name) {
+  const p = {
+  name :  name || 'Hero' ,
+  position: '00',
+  health: 100,
+  damage: 5,
+  experience: 0
+}
+return p
+}
