@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/586a3270c66d18ad810001d4/train/javascript
+
+Array.prototype.only = function(keys) {
+    keys=keys.sort((a,b)=>a-b);
+    let res = [];
+    for (let i = 0; i < keys.length; i++) {
+      res.push(this[keys[i]])
+    }
+    return res;
+}
