@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/58bccdf56f25ff6b6d00002f/train/javascript
+
+function rounding(n, m) {
+ let d = n % m;
+  if(d < m /2) {
+    return n - d;
+  }
+  else if(d > m / 2) {
+    return n + m - d;
+  }
+  return n
+}
