@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/51edd51599a189fe7f000015/train/javascript
+
+var solution = function(a, b) {
+  return a.reduce((sum, val, i) => sum + Math.pow(val - b[i], 2), 0) / a.length;
+}
