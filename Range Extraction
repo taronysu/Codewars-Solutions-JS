@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/51ba717bb08c1cd60f00002f/train/javascript
+
+function solution(args){
+args.push('Чебурашки');
+  let s = [];
+  let arr = [args[0]];
+  for (let i = 1; i < args.length; i++) {
+    if (args[i] !== args[i - 1] + 1) {
+      if (arr.length === 1) {
+        s.push(arr[0].toString());
+        arr = [];
+      } else if (arr.length === 2) {
+        s.push(arr[0].toString());
+        s.push(arr[1].toString());
+        arr = [];
+      } else {
+        s.push(`${arr[0]}-${arr[arr.length - 1]}`);
+        arr = [];
+      }
+    }
+    arr.push(args[i]);
+  }
+  return s.join(',');}
