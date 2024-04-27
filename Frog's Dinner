@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/65f361be2b30ec19b78d758f/train/javascript
+
+function frogContest(x) {
+  const f = n => n * (n + 1) / 2;
+
+  const a = f(x);
+  const b = f(Math.floor(a / 2));
+  const c = f(a + b);
+
+  return `Chris ate ${a} flies, Tom ate ${b} flies and Cat ate ${c} flies`;
+}
