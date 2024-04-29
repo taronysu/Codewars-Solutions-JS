@@ -1,0 +1,28 @@
+https://www.codewars.com/kata/5507309481b8bd3b7e001638/train/javascript
+
+function numberProperty(n) {
+  return [isPrime(n), isEven(n), mult10(n)];
+}
+
+function isEven(x) {
+  return x % 2 === 0;
+}
+
+function isPrime(num) {
+  if (num === 2 || num === 3) {
+    return true;
+  }
+  if (num % 2 === 0 || num < 2) {
+    return false;
+  }
+  for (let n = 3; n <= Math.sqrt(num); n += 2) {
+    if (num % n === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function mult10(x) {
+  return x % 10 === 0;
+}
