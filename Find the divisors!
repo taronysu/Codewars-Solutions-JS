@@ -1,0 +1,20 @@
+https://www.codewars.com/kata/544aed4c4a30184e960010f4/train/javascript
+
+function divisors(integer) {
+let arr = [];
+  for(let i = 2; i<integer;i++) {
+    if(integer%i===0)
+      arr.push(i);
+    else if(isPrime(integer))
+      return integer + " " + "is prime";
+    }
+  return arr;
+}
+
+  
+function isPrime(n){
+  if (n <= 2) return false;
+  for (let i = 2; i <= Math.round(n ** 0.5); i++){
+    if (n % i === 0) return false;
+  } return true;
+} 
