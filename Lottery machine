@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/5832db03d5bafb7d96000107/train/javascript
+
+function unique(l) {
+  let uniqueList = [];
+  for (let x of l) {
+    if (!uniqueList.includes(x)) {
+      uniqueList.push(x);
+    }
+  }
+  return uniqueList.join('');
+}
+
+function lottery(s) {
+  let nums = s.split('').filter(el => !isNaN(parseInt(el)));
+  return nums.length > 0 ? unique(nums) : 'One more run!';
+}
