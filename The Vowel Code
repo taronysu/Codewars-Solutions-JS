@@ -1,0 +1,28 @@
+https://www.codewars.com/kata/53697be005f803751e0015aa/train/javascript
+
+const encodings = {'a': '1', 'e': '2', 'i': '3', 'o': '4', 'u': '5'};
+const decodings = {'1': 'a', '2': 'e', '3': 'i', '4': 'o', '5': 'u'};
+
+function encode(st) {
+    let ret = '';
+    for (let letter of st) {
+        if (encodings.hasOwnProperty(letter)) {
+            ret += encodings[letter];
+        } else {
+            ret += letter;
+        }
+    }
+    return ret;
+}
+
+function decode(st) {
+    let ret = '';
+    for (let letter of st) {
+        if (decodings.hasOwnProperty(letter)) {
+            ret += decodings[letter];
+        } else {
+            ret += letter;
+        }
+    }
+    return ret;
+}
