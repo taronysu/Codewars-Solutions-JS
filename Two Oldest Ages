@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/511f11d355fe575d2c000001/train/javascript
+
+function twoOldestAges(ages){
+let s = ages.sort((a,b) => b-a);
+return [s[1],s[0]];
+}
