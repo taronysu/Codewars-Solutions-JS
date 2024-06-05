@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/588e0f11b7b4a5b373000041/train/javascript
+
+function lowestTemp(t) {
+  if (!t) {
+    return null;
+  }
+    return Math.min(...t.split(' ').map(Number));
+}
