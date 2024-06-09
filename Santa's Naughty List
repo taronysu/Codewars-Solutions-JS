@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5a0b4dc2ffe75f72f70000ef/train/javascript
+
+function findChildren(santasList, children) {
+let arr = santasList.filter((el,i)=>children.includes(el) && i == santasList.indexOf(el) );
+  arr.sort();
+  return arr;
+}
