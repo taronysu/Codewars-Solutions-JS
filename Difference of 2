@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/5340298112fa30e786000688/train/javascript
+
+function twosDifference(input){
+let res = [];
+  for(let i = 0; i< input.length; i++) {
+    for(let j = i+1; j < input.length; j++) {
+      let n1 = input[i];
+      let n2 = input[j];
+      if(Math.abs(n1 - n2)===2) {
+        res.push([Math.min(n1,n2),Math.max(n1,n2)]);
+      }
+    }
+  }
+return res.sort((a,b)=>a[0]-b[0]);
+}
