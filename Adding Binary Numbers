@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/55c11989e13716e35f000013/train/javascript
+
+function add(a,b) {
+  a = a.split('').reverse();
+  b = b.split('').reverse();
+  let result = '';
+  let t = 0;
+  while (a.length || b.length || t) {
+    t += (~~a.shift()) + (~~b.shift());
+    let mod = t % 2;
+    result = mod + result;
+    t = t > 1;
+  }
+  return (+result) ? result.replace(/^0+/, '') : '0';
+  }
