@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/58657574a5f191e4090002ab/train/javascript
+
+function findYear(month, dayOfWeek){
+  for (let i = 2014; i < 2051; i++)
+  if (new Date(i,month,1).getDay() == dayOfWeek)
+    return i;
+  return 0;
+}
