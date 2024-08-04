@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5b16490986b6d336c900007d/train/javascript
+
+function myLanguages(results) {
+  let arr = Object.entries(results);
+  arr.sort((a,b) => b[1] - a[1]);
+  let sorted= arr.filter(el=> el[1] >= 60)
+    return sorted.map(el => el[0]);
+}
