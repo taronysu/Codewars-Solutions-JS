@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/57d2807295497e652b000139/train/javascript
+
+function averages(arr) {
+if (arr === null || arr.length < 2) {
+        return [];
+    }
+    const res = [];
+    for (let i = 0; i < arr.length - 1; i++) {
+        res.push((arr[i] + arr[i + 1]) / 2);
+    }
+    return res;
+}
