@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/585d7d5adb20cf33cb000235/train/javascript
+
+function findUniq(arr) {
+const [x, y] = new Set(arr);
+    return arr.filter(item => item === x).length === 1 ? x : y;
+}
