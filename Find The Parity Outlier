@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5526fc09a1bbd946250002dc/train/javascript
+
+function findOutlier(x){
+  let odds =  x.filter(el=>el% 2 !== 0);
+  let even =  x.filter(el=>el% 2 == 0);
+  return odds.length == 1 ? odds[0] : even[0];
+}
