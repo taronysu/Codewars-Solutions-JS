@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/561e9c843a2ef5a40c0000a4/train/javascript
+
+function gap(g, m, n) {
+    let pr = n;
+    for (let i = m; i <= n; i++) {
+        if (isPrime(i)) {
+            if (i - pr === g) {
+                return [pr, i];
+            }
+            pr = i;
+        }
+    }
+    return null;
+}
+
+function isPrime(n) {
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
