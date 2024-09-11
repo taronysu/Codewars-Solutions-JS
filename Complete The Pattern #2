@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/55733d3ef7c43f8b0700007c/train/javascript
+
+function pattern(n){
+  let s = '';
+    for (let i = 1; i <= n; i++) {
+        s += Array.from({ length: n - i + 1 }, (_, el) => n - el).join('') + '\n';
+    }
+    return s.slice(0, -1);
+}
