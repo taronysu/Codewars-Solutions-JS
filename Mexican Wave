@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/58f5c63f1e26ecda7e000029/train/javascript
+
+function wave(people){
+let res = [];
+    for (let i = 0; i < people.length; i++) {
+        if (people[i] === ' ') {
+            continue;
+        }
+        res.push(people.slice(0, i) + people[i].toUpperCase() + people.slice(i + 1));
+    }
+    return res;
+}
