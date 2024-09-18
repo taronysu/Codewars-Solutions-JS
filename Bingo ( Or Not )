@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5a1ee4dfffe75f0fcb000145/train/javascript
+
+function bingo(arr) {
+ arr = [2, 9, 7, 14, 15].filter(el => arr.includes(el));
+    return arr.length === 5 ? 'WIN' : 'LOSE';
+}
