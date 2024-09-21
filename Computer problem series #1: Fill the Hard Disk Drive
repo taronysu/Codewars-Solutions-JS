@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5d49c93d089c6e000ff8428c/train/javascript
+
+function save(sizes, hd) {
+ let res = 0;
+    let s = 0;
+    for (let el of sizes) {
+        s += el;
+        if (s > hd) {
+            return res;
+        }
+        res += 1;
+    }
+    return res;
+}
