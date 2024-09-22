@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/563b1f55a5f2079dc100008a/train/javascript
+
+function getLargerNumbers(a, b) {
+ let res = [];
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] > b[i]) {
+            res.push(a[i]);
+        } else {
+            res.push(b[i]);
+        }
+    }
+    return res;
+}
