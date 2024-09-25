@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5acbc3b3481ebb23a400007d/train/javascript
+
+function isFlush(cards) {
+ const flush = cards.map(el => el[el.length - 1]);
+    return new Set(flush).size === 1;
+}
