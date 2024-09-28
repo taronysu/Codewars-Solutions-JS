@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/582ba36cc1901399a70005fc/train/javascript
+
+function getAverageAge(list) {
+    return Math.round(list.reduce((acc, el) => acc + el.age, 0) / list.length);
+}
