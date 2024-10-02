@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5842df8ccbd22792a4000245/train/javascript
+
+function expandedForm(num) {
+ const res = [];
+    const numStr = num.toString();
+    for (let i = 0; i < numStr.length; i++) {
+        const n = numStr[numStr.length - 1 - i];
+        if (parseInt(n)) {
+            res.push((parseInt(n) * Math.pow(10, i)).toString());
+        }
+    }
+    return res.reverse().join(' + ');
+}
