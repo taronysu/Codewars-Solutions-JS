@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/58dced7b702b805b200000be/train/javascript
+
+function distanceBetweenPoints(a, b) {
+ const d = Math.sqrt(Math.pow(b.y - a.y, 2) + Math.pow(b.x - a.x, 2));
+    return parseFloat(d.toFixed(6));
+}
