@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5503013e34137eeeaa001648/train/javascript
+
+function diamond(n){
+if (n < 1 || n % 2 === 0) {
+        return null;
+    }
+    let s = '';
+    for (let i = 0; i < n; i++) {
+        let a = (i <= n / 2) ? '*'.repeat(i * 2 + 1) : '*'.repeat((n - i) * 2 - 1);
+        s += ' '.repeat(Math.floor((n - a.length) / 2)) + a + '\n';
+    }
+    return s;
+}
