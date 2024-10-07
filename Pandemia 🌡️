@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5e2596a9ad937f002e510435/train/javascript
+
+function infected(s) {
+ const ss = s.split('X');
+    const total = ss.reduce((acc, c) => acc + c.length, 0);
+    const z = ss.filter(el => el.includes('1'));
+    const x = z.map(el => el.length.toString().padStart(el.length, '1'));
+    const xx = x.reduce((acc, k) => acc + k.length, 0);
+    return total > 0 ? (xx * 100) / total : 0;
+}
