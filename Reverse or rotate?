@@ -1,0 +1,30 @@
+https://www.codewars.com/kata/56b5afb4ed1f6d5fb0000991/train/javascript
+
+function sumCub(n) {
+    let s = 0;
+    for (let el of n) {
+        s += parseInt(el) ** 3;
+    }
+    if (s % 2 === 0) {
+        return n.split('').reverse().join('');
+    } else {
+        return n.slice(1) + n[0];
+    }
+}
+
+function revrot(strng, sz) {
+    let res = [];
+    if (sz === 0) {
+        return '';
+    }
+    for (let i = 0; i < strng.length; i += sz) {
+        res.push(strng.slice(i, i + sz));
+    }
+    if (res[res.length - 1].length < sz) {
+        res.pop();
+    }
+    let sol = '';
+    for (let el of res) {
+        sol += sumCub(el);
+    }
+    }
