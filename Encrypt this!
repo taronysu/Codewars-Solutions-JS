@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/5848565e273af816fb000449/train/javascript
+
+var encryptThis = function(text) {
+    const s = text.split(' ');
+    const res = [];
+    for (let l of s) {
+        if (l.length === 1) {
+            const firstLetterAsc = l.charCodeAt(0).toString();
+            res.push(firstLetterAsc);
+        } else if (l.length === 2) {
+            const firstLetterAsc = l.charCodeAt(0).toString();
+            const string = firstLetterAsc + l[1];
+            res.push(string);
+        } else if (l.length > 2) {
+            const firstLetterAsc = l.charCodeAt(0).toString();
+            const string = firstLetterAsc + l[l.length - 1] + l.slice(2, l.length - 1) + l[1];
+            res.push(string);
+        } else {
+            res.push('');
+        }
+    }
+    return res.join(' ');
+}
